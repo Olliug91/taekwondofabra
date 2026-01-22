@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+    --color-cyan-brand: #0098DA;
+    --color-blue-hero: #1CA0FF;
+
+    --font-heading: 'Permanent Marker', cursive;
+    --font-body: 'Inter', sans-serif;
+}
+
+@layer components {
+    .btn {
+        @apply inline-block px-8 py-3 rounded-full font-bold uppercase tracking-widest text-sm transition-transform duration-200 transform hover:-translate-y-1 shadow-md;
+    }
+
+    .btn-primary {
+        @apply bg-cyan-brand text-white hover:bg-[#007bb5] hover:shadow-lg;
+    }
+
+    .btn-outline {
+        @apply border-2 border-cyan-brand text-cyan-brand bg-transparent hover:bg-cyan-brand hover:text-white;
+    }
+}
