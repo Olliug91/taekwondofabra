@@ -480,6 +480,118 @@
             </div>
         </div>
     </section>
+    <!-- Innovation / BasicSoft -->
+    <section class="py-20 bg-gray-900 text-white overflow-hidden relative">
+        <!-- Background decorative elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-cyan-brand/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-blue-600/20 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto px-4 relative z-10 w-full">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <!-- Left: Club Management / Members -->
+                <div class="flex-1 text-center lg:text-left space-y-6">
+                    <div
+                        class="inline-block px-4 py-1.5 rounded-full bg-cyan-900/50 border border-cyan-500/30 text-cyan-300 text-sm font-bold tracking-wider uppercase mb-2">
+                        Innovación Tecnológica
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-heading leading-tight">
+                        Gestionamos nuestro club con la última tecnología
+                    </h2>
+                    <p class="text-gray-300 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        Gracias a <strong>BasicSoft Club</strong>, ofrecemos a nuestros alumnos una experiencia digital
+                        completa: inscripciones online, control de asistencia y un área privada para gestionar sus pagos y
+                        progreso.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://federados.taekwondofabra.com" target="_blank"
+                            class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-4 px-8 rounded-xl shadow-lg shadow-cyan-500/25 transition-all transform hover:scale-105">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            Acceso Alumnos
+                        </a>
+
+                        <a href="https://federados.taekwondofabra.com/formulariodatos" target="_blank"
+                            class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-105 backdrop-blur-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0 1 1 0 002 0z" />
+                            </svg>
+                            Alta Nueva
+                        </a>
+                    </div>
+
+                    <!-- App Badges -->
+                    <div class="pt-6 border-t border-white/10 max-w-md mx-auto lg:mx-0">
+                        <p class="text-sm text-gray-400 mb-3 font-medium">Próximamente disponible en:</p>
+                        <div class="flex gap-4 justify-center lg:justify-start">
+                            <img src="https://play.google.com/intl/es/badges/static/images/badges/es_badge_web_generic.png"
+                                alt="Disponible en Google Play"
+                                class="h-12 opacity-80 hover:opacity-100 transition-opacity cursor-not-allowed">
+                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                alt="Consíguelo en el App Store"
+                                class="h-12 opacity-80 hover:opacity-100 transition-opacity cursor-not-allowed">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Tool Promotion / SaaS -->
+                <div
+                    class="flex-1 w-full max-w-md lg:max-w-lg bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 lg:p-10 relative group hover:border-cyan-500/30 transition-colors duration-500">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    </div>
+
+                    <div class="relative space-y-6 text-center">
+                        <img src="https://basicsoftclub.es/storage/web/logo1.png" alt="BasicSoft Club"
+                            class="h-16 h-20 mx-auto object-contain drop-shadow-lg">
+
+                        <div class="space-y-4">
+                            <h3 class="text-2xl font-bold text-white">¿Eres un Club Deportivo?</h3>
+                            <p class="text-gray-400 leading-relaxed text-sm">
+                                Descubre la herramienta que usamos nosotros. <strong>BasicSoft Club</strong> es el SaaS
+                                definitivo para digitalizar tu escuela: menos burocracia, más tiempo para enseñar.
+                            </p>
+
+                            <ul class="text-left text-sm text-gray-300 space-y-3 pl-4">
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-green-400 shrink-0" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Gestión integral de alumnos y pagos
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-green-400 shrink-0" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    App propia para el club
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <svg class="w-5 h-5 text-green-400 shrink-0" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Crea tu propia web en minutos
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="https://basicsoftclub.es" target="_blank"
+                            class="block w-full py-3 px-6 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold transition-all hover:tracking-wide">
+                            Más Información &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Programs -->
     <section id="programas" class="py-20 bg-white">
