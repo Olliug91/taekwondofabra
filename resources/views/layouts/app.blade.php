@@ -201,8 +201,56 @@
         </div>
         <div class="container mx-auto text-center mt-12 pt-8 border-t border-white/20 opacity-60 text-sm">
             &copy; {{ date('Y') }} Taekwondo Fabra Valencia. All rights reserved.
+            <div class="mt-2 text-xs space-x-2">
+                <a href="{{ route('legal.aviso') }}" class="hover:underline">Aviso Legal</a>
+                <span>|</span>
+                <a href="{{ route('legal.privacidad') }}" class="hover:underline">Política de Privacidad</a>
+                <span>|</span>
+                <a href="{{ route('legal.cookies') }}" class="hover:underline">Política de Cookies</a>
+            </div>
         </div>
     </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner"
+        class="fixed bottom-0 left-0 w-full bg-gray-900/95 backdrop-blur text-white p-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-50 transform transition-transform duration-300 translate-y-full">
+        <div class="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="text-sm text-gray-300 md:pr-8 text-center md:text-left">
+                <p>
+                    Utilizamos cookies propias y de terceros para mejorar su experiencia y analizar el tráfico.
+                    Si continúa navegando, consideramos que acepta su uso.
+                    Puede obtener más información en nuestra <a href="{{ route('legal.cookies') }}"
+                        class="text-cyan-400 hover:text-cyan-300 underline">Política de Cookies</a>.
+                </p>
+            </div>
+            <div class="flex gap-3 shrink-0">
+                <button id="acceptCookies"
+                    class="bg-cyan-brand hover:bg-cyan-600 text-white font-medium py-2 px-6 rounded-lg transition-colors text-sm shadow-lg shadow-cyan-900/20">
+                    Aceptar todas
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cookieBanner = document.getElementById('cookieBanner');
+            const acceptBtn = document.getElementById('acceptCookies');
+
+            // Check if cookies are already accepted
+            if (!localStorage.getItem('cookiesAccepted')) {
+                // Show banner after a small delay
+                setTimeout(() => {
+                    cookieBanner.classList.remove('translate-y-full');
+                }, 1000);
+            }
+
+            acceptBtn.addEventListener('click', function () {
+                localStorage.setItem('cookiesAccepted', 'true');
+                cookieBanner.classList.add('translate-y-full');
+            });
+        });
+    </script>
 </body>
 
 </html>
