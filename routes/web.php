@@ -14,3 +14,8 @@ Route::get('/{id}poomsae', [PoomsaeController::class, 'show'])->where('id', '[0-
 Route::view('/aviso-legal', 'pages.legal.aviso')->name('legal.aviso');
 Route::view('/politica-privacidad', 'pages.legal.privacidad')->name('legal.privacidad');
 Route::view('/politica-cookies', 'pages.legal.cookies')->name('legal.cookies');
+
+
+Route::get('/liga-hockey-manopla', function () {
+    return view('hockey-manopla.index');
+});
