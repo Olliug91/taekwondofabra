@@ -17,5 +17,5 @@ Route::view('/politica-cookies', 'pages.legal.cookies')->name('legal.cookies');
 
 
 Route::get('/liga-hockey-manopla', function () {
-    return view('hockey-manopla.index');
+    return view('pages.hockey-manopla');
 });
