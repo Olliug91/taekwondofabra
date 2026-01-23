@@ -188,6 +188,11 @@
                         class="opacity-80 hover:opacity-100 hover:pl-2 transition-all text-sm leading-tight">
                         Real Fed. Española de Taekwondo
                     </a>
+                    <div class="border-t border-white/20 my-1"></div>
+                    <a href="{{ route('hockey') }}"
+                        class="opacity-60 hover:opacity-100 hover:pl-2 transition-all text-xs leading-tight">
+                        Liga Hockey Manopla
+                    </a>
                 </div>
             </div>
             <div>

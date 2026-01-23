@@ -256,117 +256,117 @@
     margin-top: 16px;
   }
 
-    .team {
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
-      border: 1px solid var(--glass-border);
-      border-radius: 20px;
+  .team {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .team:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 15px var(--accent-glow);
+    border-color: var(--accent);
+  }
+
+  .team::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transition: 0.5s;
+  }
+
+  .team:hover::before {
+    left: 100%;
+  }
+
+  .team-crest {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--line);
+    padding: 4px;
+    object-fit: contain;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  th {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    border-bottom: 2px solid var(--line);
+  }
+
+  .pill {
+    background: linear-gradient(135deg, rgba(91, 214, 255, 0.2) 0%, rgba(91, 214, 255, 0.1) 100%);
+    color: var(--accent);
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 1px solid rgba(91, 214, 255, 0.2);
+  }
+
+  .footer {
+    margin-top: 60px;
+    padding: 32px 0;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.7;
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      padding: 24px 16px 48px;
+    }
+
+    .card {
       padding: 20px;
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-      position: relative;
-      overflow: hidden;
+      border-radius: 20px;
     }
 
-    .team:hover {
-      background: rgba(255, 255, 255, 0.08);
-      transform: translateY(-5px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 15px var(--accent-glow);
-      border-color: var(--accent);
+    .kpi {
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
     }
 
-    .team::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
-      transition: 0.5s;
+    .kpi .box {
+      padding: 12px;
     }
 
-    .team:hover::before {
-      left: 100%;
+    .kpi .n {
+      font-size: 20px;
     }
 
     .team-crest {
-      width: 54px;
-      height: 54px;
-      border-radius: 14px;
-      background: rgba(0, 0, 0, 0.3);
-      border: 1px solid var(--line);
-      padding: 4px;
-      object-fit: contain;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      width: 48px;
+      height: 48px;
     }
 
-    th {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
-      color: #fff;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 11px;
-      letter-spacing: 0.08em;
-      border-bottom: 2px solid var(--line);
+    .team-name strong {
+      font-size: 15px;
     }
 
-    .pill {
-      background: linear-gradient(135deg, rgba(91, 214, 255, 0.2) 0%, rgba(91, 214, 255, 0.1) 100%);
-      color: var(--accent);
-      padding: 5px 12px;
-      border-radius: 8px;
-      font-size: 10px;
-      font-weight: 800;
-      text-transform: uppercase;
-      border: 1px solid rgba(91, 214, 255, 0.2);
+    h1 {
+      margin-bottom: 16px;
     }
-
-    .footer {
-      margin-top: 60px;
-      padding: 32px 0;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 14px;
-      text-align: center;
-      opacity: 0.7;
-    }
-
-    @media (max-width: 640px) {
-      .container {
-        padding: 24px 16px 48px;
-      }
-
-      .card {
-        padding: 20px;
-        border-radius: 20px;
-      }
-
-      .kpi {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-      }
-
-      .kpi .box {
-        padding: 12px;
-      }
-
-      .kpi .n {
-        font-size: 20px;
-      }
-
-      .team-crest {
-        width: 48px;
-        height: 48px;
-      }
-
-      .team-name strong {
-        font-size: 15px;
-      }
-
-      h1 {
-        margin-bottom: 16px;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 
 <body>
@@ -537,14 +537,18 @@
 
         <h3>Asistencia y encuentros</h3>
         <div class="rule">
-          <strong>Equipo incompleto:</strong> partido perdido y el rival suma <strong>3 puntos</strong>.<br />
-          <strong>Ambos equipos incompletos:</strong> <strong>0 puntos</strong> para ambos.
+          <strong>Equipo incompleto:</strong> Se permite completar con jugadores externos (sin enfrentamiento
+          directo) <strong>hasta llegar a 4</strong>, siempre que haya <strong>al menos 1 miembro del equipo
+            original</strong>.<br />
+          <em style="font-size:0.9em; display:block; margin-top:4px">Ejemplo: Si hay 1, se pueden pedir 3. Si hay 2, se
+            piden 2.</em>
+          Si no hay ningún miembro original, partido perdido (+3 para el rival).<br />
+          <strong>Ambos incompletos:</strong> 0 puntos para ambos.
         </div>
 
         <h3>Final de temporada y premio</h3>
         <ul>
           <li>Habrá un equipo ganador.</li>
-          <li>Todos los participantes recibirán la camiseta oficial de la liga.</li>
           <li>El equipo ganador obtendrá un premio especial.</li>
         </ul>
 
@@ -586,15 +590,15 @@
                 <td class="center"><span class="pill">J1</span></td>
                 <td>
                   <strong>🐉 Dragones</strong> vs <strong>🦅 Halcones</strong><br>
-                  <span class="small">Resultado:</span> <strong>__</strong> - <strong>__</strong><br>
+                  <span class="small">Resultado:</span> <strong>3</strong> - <strong>1</strong><br>
                   <span class="small">Puntos:</span>
-                  🐉 <strong>__</strong> &nbsp;|&nbsp; 🦅 <strong>__</strong>
+                  🐉 <strong>3</strong> &nbsp;|&nbsp; 🦅 <strong>0</strong>
                 </td>
                 <td>
                   <strong>🐉 Dragones</strong> vs <strong>🐯 Tigres</strong><br>
-                  <span class="small">Resultado:</span> <strong>__</strong> - <strong>__</strong><br>
+                  <span class="small">Resultado:</span> <strong>3</strong> - <strong>2</strong><br>
                   <span class="small">Puntos:</span>
-                  🐉 <strong>__</strong> &nbsp;|&nbsp; 🐯 <strong>__</strong>
+                  🐉 <strong>3</strong> &nbsp;|&nbsp; 🐯 <strong>0</strong>
                 </td>
               </tr>
 
@@ -603,15 +607,15 @@
                 <td class="center"><span class="pill">J2</span></td>
                 <td>
                   <strong>🐉 Dragones</strong> vs <strong>🐺 Lobos</strong><br>
-                  <span class="small">Resultado:</span> <strong>__</strong> - <strong>__</strong><br>
+                  <span class="small">Resultado:</span> <strong>3</strong> - <strong>0</strong><br>
                   <span class="small">Puntos:</span>
-                  🐉 <strong>__</strong> &nbsp;|&nbsp; 🐺 <strong>__</strong>
+                  🐉 <strong>3</strong> &nbsp;|&nbsp; 🐺 <strong>0</strong>
                 </td>
                 <td>
                   <strong>🦅 Halcones</strong> vs <strong>🐯 Tigres</strong><br>
-                  <span class="small">Resultado:</span> <strong>__</strong> - <strong>__</strong><br>
+                  <span class="small">Resultado:</span> <strong>4</strong> - <strong>2</strong><br>
                   <span class="small">Puntos:</span>
-                  🦅 <strong>__</strong> &nbsp;|&nbsp; 🐯 <strong>__</strong>
+                  🦅 <strong>3</strong> &nbsp;|&nbsp; 🐯 <strong>0</strong>
                 </td>
               </tr>
 
@@ -976,8 +980,9 @@
         </div>
 
         <div class="note">
-          <strong>Importante:</strong> si un equipo está incompleto, el partido se da por perdido (rival +3).
-          Si ambos están incompletos, 0 puntos ambos.
+          <strong>Importante:</strong> si un equipo está incompleto, puede completarse con jugadores externos hasta ser
+          4 (siempre que haya al menos 1 original).
+          Si no hay nadie del equipo, se da por perdido (rival +3).
         </div>
       </section>
 
@@ -1005,59 +1010,91 @@
               <tr>
                 <td class="center">1</td>
                 <td>🐉 Dragones</td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
+                <td class="center">3</td>
+                <td class="center">3</td>
+                <td class="center">0</td>
+                <td class="center">0</td>
+                <td class="center">9</td>
+                <td class="center">3</td>
+                <td class="center">+6</td>
+                <td class="center">9</td>
               </tr>
               <tr>
                 <td class="center">2</td>
-                <td>🐯 Tigres</td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
+                <td>🦅 Halcones</td>
+                <td class="center">2</td>
+                <td class="center">1</td>
+                <td class="center">0</td>
+                <td class="center">1</td>
+                <td class="center">5</td>
+                <td class="center">5</td>
+                <td class="center">0</td>
+                <td class="center">3</td>
               </tr>
               <tr>
                 <td class="center">3</td>
-                <td>🐺 Lobos</td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
+                <td>🐯 Tigres</td>
+                <td class="center">2</td>
+                <td class="center">0</td>
+                <td class="center">0</td>
+                <td class="center">2</td>
+                <td class="center">4</td>
+                <td class="center">7</td>
+                <td class="center">-3</td>
+                <td class="center">0</td>
               </tr>
               <tr>
                 <td class="center">4</td>
-                <td>🦅 Halcones</td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
+                <td>🐺 Lobos</td>
+                <td class="center">1</td>
+                <td class="center">0</td>
+                <td class="center">0</td>
+                <td class="center">1</td>
+                <td class="center">0</td>
+                <td class="center">3</td>
+                <td class="center">-3</td>
+                <td class="center">0</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <p class="small" style="margin-top:10px">
-          <strong>Puntos:</strong> Victoria 3 · Empate 1 · Derrota 0 · Equipo incompleto: perdido (rival +3) · Ambos
-          incompletos: 0 ambos.
+          <strong>Puntos:</strong> Victoria 3 · Empate 1 · Derrota 0 · Incompleto: Se puede completar hasta 4 (mín. 1
+          original). Si no, perdido (rival +3).
         </p>
+      </section>
+      <!-- GOLEADORES -->
+      <section class="card span-12" id="goleadores">
+        <h2>⚽ Goleadores</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Jugador/a</th>
+                <th class="center">Goles</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Miguel (Halcones)</td>
+                <td class="center">2</td>
+              </tr>
+              <tr>
+                <td>Samuel (Halcones)</td>
+                <td class="center">2</td>
+              </tr>
+              <tr>
+                <td>Nerea (Tigres)</td>
+                <td class="center">1</td>
+              </tr>
+              <tr>
+                <td>Nouhaila (Tigres)</td>
+                <td class="center">1</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </div>
     <div class="footer">
