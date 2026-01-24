@@ -624,15 +624,15 @@
                 <td class="center"><span class="pill">J3</span></td>
                 <td>
                   <strong>🐯 Tigres</strong> vs <strong>🐺 Lobos</strong><br>
-                  <span class="small">Resultado:</span> <strong>__</strong> - <strong>__</strong><br>
+                  <span class="small">Resultado:</span> <strong>1</strong> - <strong>2</strong><br>
                   <span class="small">Puntos:</span>
-                  🐯 <strong>__</strong> &nbsp;|&nbsp; 🐺 <strong>__</strong>
+                  🐯 <strong>0</strong> &nbsp;|&nbsp; 🐺 <strong>3</strong>
                 </td>
                 <td>
                   <strong>🐉 Dragones</strong> vs <strong>🦅 Halcones</strong><br>
-                  <span class="small">Resultado:</span> <strong>__</strong> - <strong>__</strong><br>
+                  <span class="small">Resultado:</span> <strong>2</strong> - <strong>2</strong><br>
                   <span class="small">Puntos:</span>
-                  🐉 <strong>__</strong> &nbsp;|&nbsp; 🦅 <strong>__</strong>
+                  🐉 <strong>1</strong> &nbsp;|&nbsp; 🦅 <strong>1</strong>
                 </td>
               </tr>
 
@@ -1010,49 +1010,49 @@
               <tr>
                 <td class="center">1</td>
                 <td>🐉 Dragones</td>
+                <td class="center">4</td>
                 <td class="center">3</td>
-                <td class="center">3</td>
+                <td class="center">1</td>
                 <td class="center">0</td>
-                <td class="center">0</td>
-                <td class="center">9</td>
-                <td class="center">3</td>
+                <td class="center">11</td>
+                <td class="center">5</td>
                 <td class="center">+6</td>
-                <td class="center">9</td>
+                <td class="center">10</td>
               </tr>
               <tr>
                 <td class="center">2</td>
                 <td>🦅 Halcones</td>
+                <td class="center">3</td>
+                <td class="center">1</td>
+                <td class="center">1</td>
+                <td class="center">1</td>
+                <td class="center">7</td>
+                <td class="center">7</td>
+                <td class="center">0</td>
+                <td class="center">4</td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td>🐺 Lobos</td>
                 <td class="center">2</td>
                 <td class="center">1</td>
                 <td class="center">0</td>
                 <td class="center">1</td>
-                <td class="center">5</td>
-                <td class="center">5</td>
-                <td class="center">0</td>
+                <td class="center">2</td>
+                <td class="center">4</td>
+                <td class="center">-2</td>
                 <td class="center">3</td>
               </tr>
               <tr>
                 <td class="center">3</td>
                 <td>🐯 Tigres</td>
-                <td class="center">2</td>
+                <td class="center">3</td>
                 <td class="center">0</td>
-                <td class="center">0</td>
-                <td class="center">2</td>
-                <td class="center">4</td>
-                <td class="center">7</td>
-                <td class="center">-3</td>
-                <td class="center">0</td>
-              </tr>
-              <tr>
-                <td class="center">4</td>
-                <td>🐺 Lobos</td>
-                <td class="center">1</td>
-                <td class="center">0</td>
-                <td class="center">0</td>
-                <td class="center">1</td>
                 <td class="center">0</td>
                 <td class="center">3</td>
-                <td class="center">-3</td>
+                <td class="center">5</td>
+                <td class="center">9</td>
+                <td class="center">-4</td>
                 <td class="center">0</td>
               </tr>
             </tbody>
@@ -1078,10 +1078,18 @@
             <tbody>
               <tr>
                 <td>Miguel (Halcones)</td>
-                <td class="center">2</td>
+                <td class="center">3</td>
               </tr>
               <tr>
                 <td>Samuel (Halcones)</td>
+                <td class="center">2</td>
+              </tr>
+               <tr>
+                <td>Nouhaila (Tigres)</td>
+                <td class="center">2</td>
+              </tr>
+              <tr>
+                <td>Jesus Lopez Rojas (Lobos)</td>
                 <td class="center">2</td>
               </tr>
               <tr>
@@ -1089,7 +1097,15 @@
                 <td class="center">1</td>
               </tr>
               <tr>
-                <td>Nouhaila (Tigres)</td>
+                <td>Oussama (Halcones)</td>
+                <td class="center">1</td>
+              </tr>
+              <tr>
+                <td>Jesus Lopez Gonzalez (Dragones)</td>
+                <td class="center">1</td>
+              </tr>
+              <tr>
+                <td>Nico (Dragones)</td>
                 <td class="center">1</td>
               </tr>
             </tbody>
