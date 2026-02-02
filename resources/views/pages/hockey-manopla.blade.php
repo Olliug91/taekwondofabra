@@ -332,38 +332,73 @@
 
   @media (max-width: 640px) {
     .container {
-      padding: 24px 16px 48px;
+      padding: 16px 8px 32px;
     }
 
     .card {
-      padding: 20px;
-      border-radius: 20px;
+      padding: 20px 14px;
+      border-radius: 16px;
     }
 
     .kpi {
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      gap: 12px;
     }
 
     .kpi .box {
-      padding: 12px;
+      padding: 14px;
     }
 
     .kpi .n {
-      font-size: 20px;
+      font-size: 22px;
     }
 
     .team-crest {
-      width: 48px;
-      height: 48px;
+      width: 54px;
+      height: 54px;
     }
 
     .team-name strong {
-      font-size: 15px;
+      font-size: 17px;
     }
 
     h1 {
-      margin-bottom: 16px;
+      margin-bottom: 20px;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    .badges {
+      gap: 8px;
+    }
+
+    .badge {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      padding: 14px 10px;
+      font-size: 14px;
+    }
+
+    table {
+      min-width: 500px;
+    }
+
+    .table-container {
+      margin: 16px 0;
+      border-radius: 12px;
+    }
+
+    .team ul li {
+      font-size: 16px;
+      padding: 4px 0;
     }
   }
 </style>
@@ -641,15 +676,15 @@
                 <td class="center"><span class="pill">J4</span></td>
                 <td>
                   <strong>🦅 Halcones</strong> vs <strong>🐺 Lobos</strong><br>
-                  <span class="small">Resultado:</span> <strong>__</strong> - <strong>__</strong><br>
+                  <span class="small">Resultado:</span> <strong>1</strong> - <strong>2</strong><br>
                   <span class="small">Puntos:</span>
-                  🦅 <strong>__</strong> &nbsp;|&nbsp; 🐺 <strong>__</strong>
+                  🦅 <strong>0</strong> &nbsp;|&nbsp; 🐺 <strong>3</strong>
                 </td>
                 <td>
                   <strong>🐉 Dragones</strong> vs <strong>🐯 Tigres</strong><br>
-                  <span class="small">Resultado:</span> <strong>__</strong> - <strong>__</strong><br>
+                  <span class="small">Resultado:</span> <strong>3</strong> - <strong>2</strong><br>
                   <span class="small">Puntos:</span>
-                  🐉 <strong>__</strong> &nbsp;|&nbsp; 🐯 <strong>__</strong>
+                  🐉 <strong>3</strong> &nbsp;|&nbsp; 🐯 <strong>0</strong>
                 </td>
               </tr>
 
@@ -1010,49 +1045,49 @@
               <tr>
                 <td class="center">1</td>
                 <td>🐉 Dragones</td>
+                <td class="center">5</td>
                 <td class="center">4</td>
-                <td class="center">3</td>
                 <td class="center">1</td>
                 <td class="center">0</td>
-                <td class="center">11</td>
-                <td class="center">5</td>
-                <td class="center">+6</td>
-                <td class="center">10</td>
+                <td class="center">14</td>
+                <td class="center">7</td>
+                <td class="center">+7</td>
+                <td class="center">13</td>
               </tr>
               <tr>
                 <td class="center">2</td>
-                <td>🦅 Halcones</td>
-                <td class="center">3</td>
-                <td class="center">1</td>
-                <td class="center">1</td>
-                <td class="center">1</td>
-                <td class="center">7</td>
-                <td class="center">7</td>
-                <td class="center">0</td>
-                <td class="center">4</td>
-              </tr>
-              <tr>
-                <td class="center">4</td>
                 <td>🐺 Lobos</td>
+                <td class="center">3</td>
                 <td class="center">2</td>
-                <td class="center">1</td>
                 <td class="center">0</td>
                 <td class="center">1</td>
-                <td class="center">2</td>
                 <td class="center">4</td>
-                <td class="center">-2</td>
-                <td class="center">3</td>
+                <td class="center">5</td>
+                <td class="center">-1</td>
+                <td class="center">6</td>
               </tr>
               <tr>
                 <td class="center">3</td>
-                <td>🐯 Tigres</td>
-                <td class="center">3</td>
-                <td class="center">0</td>
-                <td class="center">0</td>
-                <td class="center">3</td>
-                <td class="center">5</td>
+                <td>🦅 Halcones</td>
+                <td class="center">4</td>
+                <td class="center">1</td>
+                <td class="center">1</td>
+                <td class="center">2</td>
+                <td class="center">8</td>
                 <td class="center">9</td>
-                <td class="center">-4</td>
+                <td class="center">-1</td>
+                <td class="center">4</td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td>🐯 Tigres</td>
+                <td class="center">4</td>
+                <td class="center">0</td>
+                <td class="center">0</td>
+                <td class="center">4</td>
+                <td class="center">7</td>
+                <td class="center">12</td>
+                <td class="center">-5</td>
                 <td class="center">0</td>
               </tr>
             </tbody>
@@ -1077,6 +1112,18 @@
             </thead>
             <tbody>
               <tr>
+                <td>Jesus Lopez Rojas (Lobos)</td>
+                <td class="center">4</td>
+              </tr>
+              <tr>
+                <td>Jesus Lopez Gonzalez (Dragones)</td>
+                <td class="center">3</td>
+              </tr>
+              <tr>
+                <td>Nouhaila (Tigres)</td>
+                <td class="center">3</td>
+              </tr>
+              <tr>
                 <td>Miguel (Halcones)</td>
                 <td class="center">3</td>
               </tr>
@@ -1084,28 +1131,20 @@
                 <td>Samuel (Halcones)</td>
                 <td class="center">2</td>
               </tr>
-               <tr>
-                <td>Nouhaila (Tigres)</td>
-                <td class="center">2</td>
-              </tr>
-              <tr>
-                <td>Jesus Lopez Rojas (Lobos)</td>
-                <td class="center">2</td>
-              </tr>
               <tr>
                 <td>Nerea (Tigres)</td>
-                <td class="center">1</td>
+                <td class="center">2</td>
+              </tr>
+              <tr>
+                <td>Nico (Dragones)</td>
+                <td class="center">2</td>
               </tr>
               <tr>
                 <td>Oussama (Halcones)</td>
                 <td class="center">1</td>
               </tr>
               <tr>
-                <td>Jesus Lopez Gonzalez (Dragones)</td>
-                <td class="center">1</td>
-              </tr>
-              <tr>
-                <td>Nico (Dragones)</td>
+                <td>Mar Plaza (Halcones)</td>
                 <td class="center">1</td>
               </tr>
             </tbody>
