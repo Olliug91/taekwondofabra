@@ -724,14 +724,14 @@
                 <td>20/02/2026</td>
                 <td class="center"><span class="pill">J4</span></td>
                 <td><strong>🦅 Halcones</strong> vs <strong>🐺 Lobos</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🦅 <strong>__</strong>
+                  <strong>0</strong> - <strong>1</strong><br><span class="small">Puntos:</span> 🦅 <strong>0</strong>
                   |
-                  🐺 <strong>__</strong>
+                  🐺 <strong>3</strong>
                 </td>
                 <td><strong>🐉 Dragones</strong> vs <strong>🐯 Tigres</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🐉 <strong>__</strong>
+                  <strong>3</strong> - <strong>2</strong><br><span class="small">Puntos:</span> 🐉 <strong>3</strong>
                   |
-                  🐯 <strong>__</strong>
+                  🐯 <strong>0</strong>
                 </td>
               </tr>
 
@@ -1045,49 +1045,49 @@
               <tr>
                 <td class="center">1</td>
                 <td>🐉 Dragones</td>
-                <td class="center">7</td>
-                <td class="center">5</td>
+                <td class="center">8</td>
+                <td class="center">6</td>
                 <td class="center">1</td>
                 <td class="center">1</td>
-                <td class="center">16</td>
-                <td class="center">9</td>
-                <td class="center">+7</td>
-                <td class="center">16</td>
+                <td class="center">19</td>
+                <td class="center">11</td>
+                <td class="center">+8</td>
+                <td class="center">19</td>
               </tr>
               <tr>
                 <td class="center">2</td>
                 <td>🐺 Lobos</td>
+                <td class="center">6</td>
                 <td class="center">5</td>
-                <td class="center">4</td>
                 <td class="center">0</td>
                 <td class="center">1</td>
-                <td class="center">11</td>
-                <td class="center">9</td>
-                <td class="center">+2</td>
                 <td class="center">12</td>
+                <td class="center">9</td>
+                <td class="center">+3</td>
+                <td class="center">15</td>
               </tr>
               <tr>
                 <td class="center">3</td>
                 <td>🦅 Halcones</td>
-                <td class="center">6</td>
+                <td class="center">7</td>
                 <td class="center">1</td>
                 <td class="center">2</td>
-                <td class="center">3</td>
+                <td class="center">4</td>
                 <td class="center">11</td>
-                <td class="center">13</td>
-                <td class="center">-2</td>
+                <td class="center">14</td>
+                <td class="center">-3</td>
                 <td class="center">5</td>
               </tr>
               <tr>
                 <td class="center">4</td>
                 <td>🐯 Tigres</td>
-                <td class="center">6</td>
+                <td class="center">7</td>
                 <td class="center">0</td>
                 <td class="center">1</td>
-                <td class="center">5</td>
-                <td class="center">13</td>
-                <td class="center">20</td>
-                <td class="center">-7</td>
+                <td class="center">6</td>
+                <td class="center">15</td>
+                <td class="center">23</td>
+                <td class="center">-8</td>
                 <td class="center">1</td>
               </tr>
             </tbody>
@@ -1113,7 +1113,7 @@
             <tbody>
               <tr>
                 <td>Jesus Lopez Rojas (Lobos)</td>
-                <td class="center">9</td>
+                <td class="center">10</td>
               </tr>
               <tr>
                 <td>Miguel Fernandez (Halcones)</td>
@@ -1121,11 +1121,11 @@
               </tr>
               <tr>
                 <td>Jesus Lopez Gonzalez (Dragones)</td>
-                <td class="center">4</td>
+                <td class="center">6</td>
               </tr>
               <tr>
                 <td>Nerea Rafael (Tigres)</td>
-                <td class="center">4</td>
+                <td class="center">5</td>
               </tr>
               <tr>
                 <td>Nouhaila Laagel (Tigres)</td>
@@ -1144,6 +1144,10 @@
                 <td class="center">2</td>
               </tr>
               <tr>
+                <td>Rodrigo Lopez (Tigres)</td>
+                <td class="center">2</td>
+              </tr>
+              <tr>
                 <td>Mar Plaza (Halcones)</td>
                 <td class="center">1</td>
               </tr>
@@ -1156,7 +1160,7 @@
                 <td class="center">1</td>
               </tr>
               <tr>
-                <td>Rodrigo Lopez (Tigres)</td>
+                <td>Juanjo Pardo (Dragones)</td>
                 <td class="center">1</td>
               </tr>
               <tr>
