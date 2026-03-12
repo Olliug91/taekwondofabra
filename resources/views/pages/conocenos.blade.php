@@ -98,7 +98,16 @@
                                 <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                                 <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                             </svg>
-                            <p><strong>Técnico Deportivo Nivel II</strong>.</p>
+                            <p><strong>Técnico Deportivo Nivel II - GVA/FTCV</strong>.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-cyan-brand shrink-0 mt-1"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                            <p><strong>WT Coach Certification Course [Level I]</strong>.</p>
                         </div>
                     </div>
                 </div>
@@ -136,7 +145,7 @@
                                 <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                                 <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                             </svg>
-                            <p><strong>Técnico Deportivo Nivel II</strong>.</p>
+                            <p><strong>Técnico Deportivo Nivel II - GVA/FTCV</strong>.</p>
                         </div>
                         <div class="flex items-start gap-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-cyan-brand shrink-0 mt-1"
@@ -146,6 +155,33 @@
                                 <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                             </svg>
                             <p>Máster en <strong>Derecho Deportivo</strong>.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-cyan-brand shrink-0 mt-1"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                            <p>Curso <strong>Delegado del menor en Entidades Deportivas - GVA</strong>.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-cyan-brand shrink-0 mt-1"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                            <p>Curso <strong>Observatorio del deporte CV - GVA</strong>.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-cyan-brand shrink-0 mt-1"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                            <p>Curso <strong>Diseño Planes de Igualdad en Clubs - GVA</strong>.</p>
                         </div>
                     </div>
                 </div>
