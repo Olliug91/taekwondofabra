@@ -62,6 +62,22 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
+  @keyframes pulse {
+    0% { opacity: 0.4; transform: scale(0.95); }
+    50% { opacity: 1; transform: scale(1.05); }
+    100% { opacity: 0.4; transform: scale(0.95); }
+  }
+
+  .status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #5bd6ff;
+    display: inline-block;
+    box-shadow: 0 0 10px var(--accent);
+    animation: pulse 2s infinite ease-in-out;
+  }
+
   .card:hover {
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
   }
@@ -400,6 +416,129 @@
       font-size: 16px;
       padding: 4px 0;
     }
+
+    .market-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .market-header {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .market-rules, .market-draft-order {
+      width: 100% !important;
+      min-width: 0 !important;
+    }
+
+    .draft-columns {
+      grid-template-columns: 1fr !important;
+      gap: 24px !important;
+    }
+
+    .status-badge {
+      align-self: flex-start;
+    }
+  }
+
+  /* Market Section Styles */
+  .market-header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    gap: 32px;
+  }
+
+  .market-rules {
+    flex: 1.5; 
+    min-width: 300px;
+  }
+
+  .market-draft-order {
+    flex: 1; 
+    min-width: 280px;
+  }
+
+  .rules-container {
+    background: rgba(91, 214, 255, 0.05); 
+    border: 1px dashed rgba(91, 214, 255, 0.3); 
+    border-radius: 20px; 
+    padding: 24px; 
+    margin: 24px 0;
+  }
+
+  .draft-columns {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+  }
+
+  .status-badge {
+    background: rgba(91, 214, 255, 0.1); 
+    border: 1px solid rgba(91, 214, 255, 0.2); 
+    padding: 4px 12px; 
+    border-radius: 20px; 
+    font-size: 11px; 
+    color: var(--accent); 
+    font-weight: 700; 
+    display: flex; 
+    align-items: center; 
+    gap: 8px;
+  }
+
+  .market-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--line);
+  }
+
+  .market-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .draft-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    transition: all 0.3s ease;
+  }
+
+  .draft-item:hover {
+    background: rgba(91, 214, 255, 0.05);
+    border-color: rgba(91, 214, 255, 0.3);
+  }
+
+  .star-pill {
+    background: rgba(255, 215, 0, 0.1);
+    color: #ffd700;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .regular-pill {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--muted);
+    border: 1px solid var(--line);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
   }
 </style>
 </head>
@@ -589,6 +728,101 @@
 
         <h3>Objetivo principal</h3>
         <p><strong>Respeto · Esfuerzo · Compañerismo · Disciplina</strong></p>
+      </section>
+
+      <section class="card span-12" id="mercado">
+        <div class="market-header">
+          <div class="market-rules">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px; flex-wrap: wrap;">
+              <h2 style="margin: 0;">💸 Mercado de Fichajes</h2>
+              <span class="status-badge">
+                <span class="status-dot"></span> PRÓXIMAMENTE
+              </span>
+            </div>
+            <p>Se abre el periodo de traspasos para equilibrar la liga. Los equipos con menos puntos tienen la prioridad para elegir nuevos refuerzos.</p>
+
+            <div class="rules-container">
+              <h4 style="margin-top: 0; color: var(--accent); font-size: 18px; margin-bottom: 12px;">Reglas del Mercado:</h4>
+              <ul style="margin: 0; padding-left: 20px; color: var(--text); line-height: 1.6;">
+                <li style="margin-bottom: 8px;"><strong>Jugador Intocable:</strong> Cada equipo puede proteger a <strong>1 integrante</strong> de su plantilla.</li>
+                <li style="margin-bottom: 8px;"><strong>Draft Serpiente:</strong> Ronda 1 (1º a 4º). Ronda 2 (Invertida: 4º a 1º).</li>
+                <li style="margin-bottom: 8px;"><strong>Intercambio Puro:</strong> Al fichar a uno nuevo, sale uno de los que estaba en el mercado.</li>
+                <li><strong>Identidad:</strong> Los equipos mantienen su nombre, puntos y escudo tras los fichajes.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="market-draft-order">
+            <h3 style="margin-top: 10px; margin-bottom: 16px; font-size: 20px;">📋 Orden de Elección</h3>
+            
+            <div class="draft-columns">
+              <!-- RONDA 1 -->
+              <div>
+                <div style="font-size: 11px; text-transform: uppercase; color: var(--accent); font-weight: 800; margin-bottom: 12px; letter-spacing: 0.1em;">Ronda 1</div>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                  <div class="draft-item" style="padding: 10px 14px;">
+                    <span style="font-weight: 800; color: var(--accent); width: 24px;">1º</span>
+                    <img src="storage/hockey-manopla/tigres.png" style="width: 24px; height: 24px;">
+                    <span>Tigres</span>
+                  </div>
+                  <div class="draft-item" style="padding: 10px 14px;">
+                    <span style="font-weight: 800; color: var(--accent); width: 24px;">2º</span>
+                    <img src="storage/hockey-manopla/halcones.png" style="width: 24px; height: 24px;">
+                    <span>Halcones</span>
+                  </div>
+                  <div class="draft-item" style="padding: 10px 14px;">
+                    <span style="font-weight: 800; color: var(--accent); width: 24px;">3º</span>
+                    <img src="storage/hockey-manopla/lobos.png" style="width: 24px; height: 24px;">
+                    <span>Lobos</span>
+                  </div>
+                  <div class="draft-item" style="padding: 10px 14px;">
+                    <span style="font-weight: 800; color: var(--accent); width: 24px;">4º</span>
+                    <img src="storage/hockey-manopla/dragones.png" style="width: 24px; height: 24px;">
+                    <span>Dragones</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RONDA 2 -->
+              <div>
+                <div style="font-size: 11px; text-transform: uppercase; color: var(--muted); font-weight: 800; margin-bottom: 12px; letter-spacing: 0.1em;">Ronda 2</div>
+                <div style="display: flex; flex-direction: column; gap: 8px;">
+                  <div class="draft-item" style="padding: 10px 14px; border-color: rgba(255,255,255,0.05);">
+                    <span style="font-weight: 800; color: var(--muted); width: 24px;">5º</span>
+                    <img src="storage/hockey-manopla/dragones.png" style="width: 24px; height: 24px;">
+                    <span>Dragones</span>
+                  </div>
+                  <div class="draft-item" style="padding: 10px 14px; border-color: rgba(255,255,255,0.05);">
+                    <span style="font-weight: 800; color: var(--muted); width: 24px;">6º</span>
+                    <img src="storage/hockey-manopla/lobos.png" style="width: 24px; height: 24px;">
+                    <span>Lobos</span>
+                  </div>
+                  <div class="draft-item" style="padding: 10px 14px; border-color: rgba(255,255,255,0.05);">
+                    <span style="font-weight: 800; color: var(--muted); width: 24px;">7º</span>
+                    <img src="storage/hockey-manopla/halcones.png" style="width: 24px; height: 24px;">
+                    <span>Halcones</span>
+                  </div>
+                  <div class="draft-item" style="padding: 10px 14px; border-color: rgba(255,255,255,0.05);">
+                    <span style="font-weight: 800; color: var(--muted); width: 24px;">8º</span>
+                    <img src="storage/hockey-manopla/tigres.png" style="width: 24px; height: 24px;">
+                    <span>Tigres</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <p class="small" style="margin-top: 20px; opacity: 0.6; font-style: italic; line-height: 1.4;">
+              * Sistema de serpiente: El último de la ronda 1 es el primero de la ronda 2.
+            </p>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 40px; border-bottom: 1px solid var(--line); padding-bottom: 12px; margin-bottom: 20px;">🏃 Jugadores Disponibles</h3>
+        <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--line); border-radius: 20px; padding: 40px; text-align: center;">
+          <div style="font-size: 40px; margin-bottom: 16px;">⏳</div>
+          <h4 style="margin: 0; font-size: 20px; color: var(--accent);">Lista en preparación</h4>
+          <p style="margin: 10px 0 0; color: var(--muted);">Estamos definiendo los jugadores protegidos por cada equipo. <br> Próximamente se anunciarán los integrantes que saldrán a sorteo para el mercado.</p>
+        </div>
       </section>
 
 
