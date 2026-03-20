@@ -1004,14 +1004,14 @@
                 <td>13/03/2026</td>
                 <td class="center"><span class="pill">J4</span></td>
                 <td><strong>🦅 Halcones</strong> vs <strong>🐺 Lobos</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🦅 <strong>__</strong>
+                  <strong>3</strong> - <strong>5</strong><br><span class="small">Puntos:</span> 🦅 <strong>0</strong>
                   |
-                  🐺 <strong>__</strong>
+                  🐺 <strong>3</strong>
                 </td>
                 <td><strong>🐉 Dragones</strong> vs <strong>🐯 Tigres</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🐉 <strong>__</strong>
+                  <strong>2</strong> - <strong>5</strong><br><span class="small">Puntos:</span> 🐉 <strong>0</strong>
                   |
-                  🐯 <strong>__</strong>
+                  🐯 <strong>3</strong>
                 </td>
               </tr>
 
@@ -1276,53 +1276,53 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+               <tr>
                 <td class="center">1</td>
-                <td>🐉 Dragones</td>
-                <td class="center">10</td>
-                <td class="center">7</td>
+                <td>🐺 Lobos</td>
+                <td class="center">9</td>
+                <td class="center">8</td>
+                <td class="center">0</td>
                 <td class="center">1</td>
-                <td class="center">2</td>
-                <td class="center">22</td>
-                <td class="center">14</td>
+                <td class="center">21</td>
+                <td class="center">13</td>
                 <td class="center">+8</td>
-                <td class="center">22</td>
+                <td class="center">24</td>
               </tr>
               <tr>
                 <td class="center">2</td>
-                <td>🐺 Lobos</td>
-                <td class="center">8</td>
+                <td>🐉 Dragones</td>
+                <td class="center">11</td>
                 <td class="center">7</td>
-                <td class="center">0</td>
                 <td class="center">1</td>
-                <td class="center">16</td>
-                <td class="center">10</td>
-                <td class="center">+6</td>
-                <td class="center">21</td>
+                <td class="center">3</td>
+                <td class="center">24</td>
+                <td class="center">19</td>
+                <td class="center">+5</td>
+                <td class="center">22</td>
               </tr>
               <tr>
                 <td class="center">3</td>
-                <td>🦅 Halcones</td>
-                <td class="center">9</td>
-                <td class="center">1</td>
+                <td>🐯 Tigres</td>
+                <td class="center">10</td>
                 <td class="center">2</td>
-                <td class="center">6</td>
-                <td class="center">14</td>
-                <td class="center">19</td>
-                <td class="center">-5</td>
-                <td class="center">5</td>
+                <td class="center">1</td>
+                <td class="center">7</td>
+                <td class="center">23</td>
+                <td class="center">29</td>
+                <td class="center">-6</td>
+                <td class="center">7</td>
               </tr>
               <tr>
                 <td class="center">4</td>
-                <td>🐯 Tigres</td>
-                <td class="center">9</td>
+                <td>🦅 Halcones</td>
+                <td class="center">10</td>
                 <td class="center">1</td>
-                <td class="center">1</td>
+                <td class="center">2</td>
                 <td class="center">7</td>
-                <td class="center">18</td>
-                <td class="center">27</td>
-                <td class="center">-9</td>
-                <td class="center">4</td>
+                <td class="center">17</td>
+                <td class="center">24</td>
+                <td class="center">-7</td>
+                <td class="center">5</td>
               </tr>
             </tbody>
           </table>
@@ -1347,10 +1347,14 @@
             <tbody>
               <tr>
                 <td>Jesus Lopez Rojas (Lobos)</td>
-                <td class="center">12</td>
+                <td class="center">16</td>
               </tr>
               <tr>
                 <td>Miguel Fernandez (Halcones)</td>
+                <td class="center">10</td>
+              </tr>
+              <tr>
+                <td>Oussama Ezzine (Halcones)</td>
                 <td class="center">8</td>
               </tr>
               <tr>
@@ -1359,7 +1363,7 @@
               </tr>
               <tr>
                 <td>Nicolas Castro (Dragones)</td>
-                <td class="center">6</td>
+                <td class="center">7</td>
               </tr>
               <tr>
                 <td>Nerea Rafael (Tigres)</td>
@@ -1374,12 +1378,8 @@
                 <td class="center">3</td>
               </tr>
               <tr>
-                <td>Oussama Ezzine (Halcones)</td>
-                <td class="center">3</td>
-              </tr>
-              <tr>
                 <td>Mar Plaza (Halcones)</td>
-                <td class="center">2</td>
+                <td class="center">3</td>
               </tr>
               <tr>
                 <td>Samuel Peña (Halcones)</td>
@@ -1391,7 +1391,7 @@
               </tr>
               <tr>
                 <td>Rafa Otero (Lobos)</td>
-                <td class="center">1</td>
+                <td class="center">2</td>
               </tr>
               <tr>
                 <td>Claudia Lopez (Lobos)</td>
@@ -1407,6 +1407,10 @@
               </tr>
               <tr>
                 <td>Alula Rawat (Lobos)</td>
+                <td class="center">1</td>
+              </tr>
+              <tr>
+                <td>Carla Taroncher (Dragones)</td>
                 <td class="center">1</td>
               </tr>
             </tbody>

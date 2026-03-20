@@ -524,14 +524,21 @@
 
                     <!-- App Badges -->
                     <div class="pt-6 border-t border-white/10 max-w-md mx-auto lg:mx-0">
-                        <p class="text-sm text-gray-400 mb-3 font-medium">Próximamente disponible en:</p>
-                        <div class="flex gap-4 justify-center lg:justify-start">
-                            <img src="https://play.google.com/intl/es/badges/static/images/badges/es_badge_web_generic.png"
-                                alt="Disponible en Google Play"
-                                class="h-12 opacity-80 hover:opacity-100 transition-opacity cursor-not-allowed">
-                            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                                alt="Consíguelo en el App Store"
-                                class="h-12 opacity-80 hover:opacity-100 transition-opacity cursor-not-allowed">
+                        <div class="flex flex-col gap-4">
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2 font-medium">Ya disponible en:</p>
+                                <a href="https://play.google.com/store/apps/details?id=com.basicsoft.tkdfabra" target="_blank" class="inline-block transform transition-transform hover:scale-105">
+                                    <img src="https://play.google.com/intl/es/badges/static/images/badges/es_badge_web_generic.png"
+                                        alt="Disponible en Google Play"
+                                        class="h-14">
+                                </a>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-2 font-medium">Próximamente en:</p>
+                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                    alt="Consíguelo en el App Store"
+                                    class="h-10 opacity-50 grayscale cursor-not-allowed">
+                            </div>
                         </div>
                     </div>
                 </div>
