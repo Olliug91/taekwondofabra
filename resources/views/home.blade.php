@@ -2,6 +2,19 @@
 @section('title', 'Taekwondo Fabra Valencia | Clases de Taekwondo en Valencia')
 @section('meta_description', 'Clases de Taekwondo en Valencia desde 3-4 años. Iniciación, cadete y junior/senior. Club federado y equipo de competición.')
 @section('content')
+    <style>
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+            will-change: transform, opacity;
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
 
     <!-- Hero Section -->
     <section id="hero-slider" class="relative h-[100dvh] md:h-[700px] overflow-hidden group">
@@ -79,7 +92,8 @@
 
 
     <!-- Instagram Feed Section -->
-    <section class="py-12 bg-white border-b border-gray-100">
+    <section id="insta-feed" class="py-12 bg-white border-b border-gray-100 reveal-on-scroll">
+
         <div class="container mx-auto px-4">
             <div class="text-center mb-10">
                 <p class="text-gray-500 font-bold tracking-widest uppercase mb-2">Social Media</p>
@@ -154,7 +168,8 @@
     </section>
 
     <!-- Stats / Features -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white reveal-on-scroll">
+
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-5xl font-heading text-cyan-brand mb-4">¿POR QUÉ ELEGIRNOS?</h2>
@@ -227,7 +242,8 @@
     </section>
 
     <!-- Schedules -->
-    <section id="horarios" class="py-20 bg-gray-50">
+    <section id="horarios" class="py-20 bg-gray-50 reveal-on-scroll">
+
         <div class=" container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-heading text-gray-900 mb-4">Horarios de Clase</h2>
@@ -481,7 +497,8 @@
         </div>
     </section>
     <!-- Innovation / BasicSoft -->
-    <section class="py-20 bg-gray-900 text-white overflow-hidden relative">
+    <section class="py-20 bg-gray-900 text-white overflow-hidden relative reveal-on-scroll">
+
         <!-- Background decorative elements -->
         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-cyan-brand/20 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-blue-600/20 rounded-full blur-3xl"></div>
@@ -601,7 +618,8 @@
 
 
     <!-- Programs -->
-    <section id="programas" class="py-20 bg-white">
+    <section id="programas" class="py-20 bg-white reveal-on-scroll">
+
         <div class="container mx-auto px-4">
             <h2 class="text-center text-4xl mb-16 font-heading text-gray-900">Nuestras Guías de Examen</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -643,7 +661,8 @@
     </section>
 
     <!-- Technical Resources -->
-    <section class="py-20 bg-gray-50">
+    <section id="recursos-tecnicos" class="py-20 bg-gray-50 reveal-on-scroll">
+
         <div class="container mx-auto px-4">
             <h2 class="text-center text-4xl mb-16 font-heading text-gray-900">Recursos Técnicos</h2>
 
@@ -716,7 +735,8 @@
     </section>
 
     {{-- ===================== STATS ANIMADOS ===================== --}}
-    <section id="stats" class="py-20 bg-cyan-brand text-white overflow-hidden relative">
+    <section id="stats" class="py-20 bg-cyan-brand text-white overflow-hidden relative reveal-on-scroll">
+
         {{-- Decorative blobs --}}
         <div class="absolute inset-0 pointer-events-none">
             <div class="absolute -top-16 -left-16 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
@@ -786,7 +806,8 @@
     </section>
 
     {{-- ===================== CTA FORMULARIO ===================== --}}
-    <section id="primera-clase" class="py-24 bg-gray-50 relative overflow-hidden">
+    <section id="primera-clase" class="py-24 bg-gray-50 relative overflow-hidden reveal-on-scroll">
+
         <div class="absolute inset-0 pointer-events-none">
             <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-50 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl opacity-60"></div>
             <div class="absolute bottom-0 left-0 w-80 h-80 bg-cyan-50 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl opacity-60"></div>
@@ -1028,5 +1049,26 @@
             }, 600);
         });
     })();
+    // ====== Scroll Reveal Animation ======
+    (function () {
+        const revealElements = document.querySelectorAll('.reveal-on-scroll');
+        if (!revealElements.length) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Once revealed, we don't need to observe it anymore
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { 
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px' // Trigger slightly before it enters fully
+        });
+
+        revealElements.forEach(el => observer.observe(el));
+    })();
+
     </script>
 @endsection
