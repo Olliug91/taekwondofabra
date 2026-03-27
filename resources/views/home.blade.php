@@ -714,4 +714,319 @@
             </div>
         </div>
     </section>
-@endsection
+
+    {{-- ===================== STATS ANIMADOS ===================== --}}
+    <section id="stats" class="py-20 bg-cyan-brand text-white overflow-hidden relative">
+        {{-- Decorative blobs --}}
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute -top-16 -left-16 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+            <div class="absolute -bottom-16 -right-16 w-72 h-72 bg-black/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-14">
+                <p class="text-white/60 uppercase tracking-widest text-sm font-bold mb-2">Taekwondo Fabra en cifras</p>
+                <h2 class="text-3xl md:text-5xl font-heading">Nuestra trayectoria habla por sí sola</h2>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto" id="stats-grid">
+                {{-- Años --}}
+                <div class="text-center group">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/10 mb-4 group-hover:bg-white/20 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="text-5xl md:text-6xl font-heading font-bold leading-none mb-2">
+                        <span class="stat-counter" data-target="12" data-suffix="+">0</span>
+                    </div>
+                    <p class="text-white/70 text-sm font-semibold uppercase tracking-wider">Años de historia</p>
+                </div>
+
+                {{-- Alumnos --}}
+                <div class="text-center group">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/10 mb-4 group-hover:bg-white/20 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <div class="text-5xl md:text-6xl font-heading font-bold leading-none mb-2">
+                        <span class="stat-counter" data-target="70" data-suffix="+">0</span>
+                    </div>
+                    <p class="text-white/70 text-sm font-semibold uppercase tracking-wider">Alumnos activos</p>
+                </div>
+
+                {{-- Cinturones negros --}}
+                <div class="text-center group">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/10 mb-4 group-hover:bg-white/20 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                    </div>
+                    <div class="text-5xl md:text-6xl font-heading font-bold leading-none mb-2">
+                        <span class="stat-counter" data-target="15" data-suffix="+">0</span>
+                    </div>
+                    <p class="text-white/70 text-sm font-semibold uppercase tracking-wider">Cinturones negros formados</p>
+                </div>
+
+                {{-- Podios --}}
+                <div class="text-center group">
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/10 mb-4 group-hover:bg-white/20 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        </svg>
+                    </div>
+                    <div class="text-5xl md:text-6xl font-heading font-bold leading-none mb-2">
+                        <span class="stat-counter" data-target="30" data-suffix="+">0</span>
+                    </div>
+                    <p class="text-white/70 text-sm font-semibold uppercase tracking-wider">Podios autonómicos y nacionales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- ===================== CTA FORMULARIO ===================== --}}
+    <section id="primera-clase" class="py-24 bg-gray-50 relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-50 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl opacity-60"></div>
+            <div class="absolute bottom-0 left-0 w-80 h-80 bg-cyan-50 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl opacity-60"></div>
+        </div>
+
+        <div class="container mx-auto px-4 max-w-6xl relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+                {{-- Left: textos y beneficios --}}
+                <div class="space-y-6">
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-cyan-100 text-cyan-800 text-sm font-bold tracking-wider uppercase">
+                        Sin compromiso
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-heading text-gray-900 leading-tight">
+                        Ven a tu <span class="text-cyan-brand">primera clase</span> gratis
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        ¿Tienes dudas? La mejor forma de conocernos es venir y verlo en persona.
+                        Escríbenos y te reservamos una clase de prueba sin ningún coste ni compromiso.
+                    </p>
+
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cyan-100 flex items-center justify-center">
+                                <svg class="w-3.5 h-3.5 text-cyan-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            Apto para todas las edades, desde 3 años
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cyan-100 flex items-center justify-center">
+                                <svg class="w-3.5 h-3.5 text-cyan-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            No necesitas equipación previa
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cyan-100 flex items-center justify-center">
+                                <svg class="w-3.5 h-3.5 text-cyan-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            Club federado FTCV &amp; RFET
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700">
+                            <div class="flex-shrink-0 w-6 h-6 rounded-full bg-cyan-100 flex items-center justify-center">
+                                <svg class="w-3.5 h-3.5 text-cyan-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            Entrenadores con 4º Dan y certificación WT
+                        </li>
+                    </ul>
+
+                    <div class="pt-2 flex items-center gap-4 text-sm text-gray-500">
+                        <a href="tel:676362738" class="flex items-center gap-2 hover:text-cyan-brand transition-colors font-semibold">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            676 362 738
+                        </a>
+                        <span class="text-gray-300">|</span>
+                        <a href="mailto:guillo@taekwondofabra.com" class="flex items-center gap-2 hover:text-cyan-brand transition-colors font-semibold">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            guillo@taekwondofabra.com
+                        </a>
+                    </div>
+                </div>
+
+                {{-- Right: formulario --}}
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-10 relative">
+                    {{-- Decorative corner accent --}}
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-cyan-50 rounded-bl-3xl rounded-tr-3xl pointer-events-none"></div>
+
+                    <div id="cta-form-success" class="hidden flex-col items-center justify-center text-center py-10 gap-4">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-2">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-heading text-gray-900">¡Mensaje enviado!</h3>
+                        <p class="text-gray-500">Te contactaremos lo antes posible para confirmar tu clase de prueba.</p>
+                    </div>
+
+                    <form id="cta-form" class="space-y-5 relative z-10"
+                          action="mailto:guillo@taekwondofabra.com"
+                          method="post"
+                          enctype="text/plain"
+                          novalidate>
+
+                        <div>
+                            <h3 class="text-xl font-heading text-gray-900 mb-1">Reserva tu clase gratuita</h3>
+                            <p class="text-sm text-gray-400">Te responderemos en menos de 24 horas.</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="cta-nombre" class="block text-sm font-semibold text-gray-700 mb-1.5">Nombre *</label>
+                                <input type="text" id="cta-nombre" name="nombre" required
+                                    placeholder="Tu nombre"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-brand/30 focus:border-cyan-brand transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label for="cta-edad" class="block text-sm font-semibold text-gray-700 mb-1.5">Edad del alumno *</label>
+                                <input type="number" id="cta-edad" name="edad" required min="3" max="99"
+                                    placeholder="Ej: 8"
+                                    class="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-brand/30 focus:border-cyan-brand transition-colors text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="cta-telefono" class="block text-sm font-semibold text-gray-700 mb-1.5">Teléfono de contacto *</label>
+                            <input type="tel" id="cta-telefono" name="telefono" required
+                                placeholder="Ej: 612 345 678"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-brand/30 focus:border-cyan-brand transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label for="cta-mensaje" class="block text-sm font-semibold text-gray-700 mb-1.5">¿Algo más que quieras comentarnos? <span class="text-gray-400 font-normal">(opcional)</span></label>
+                            <textarea id="cta-mensaje" name="mensaje" rows="3"
+                                placeholder="Experiencia previa, horario preferido..."
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-brand/30 focus:border-cyan-brand transition-colors text-sm resize-none"></textarea>
+                        </div>
+
+                        {{-- Honeypot: invisible para humanos, los bots lo rellenan --}}
+                        <div style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" aria-hidden="true">
+                            <label for="cta-hp">No rellenar</label>
+                            <input type="text" id="cta-hp" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        {{-- Math captcha --}}
+                        <div>
+                            <label id="cta-captcha-label" for="cta-captcha" class="block text-sm font-semibold text-gray-700 mb-1.5">Verificación: ¿cuánto es …? *</label>
+                            <input type="number" id="cta-captcha" name="captcha" required
+                                placeholder="Tu respuesta"
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-brand/30 focus:border-cyan-brand transition-colors text-sm">
+                        </div>
+
+                        <button type="submit" id="cta-submit-btn"
+                            class="w-full bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold py-4 px-8 rounded-xl transition-all transform hover:scale-[1.02] shadow-lg shadow-green-500/20 text-base flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Contactar por WhatsApp
+                        </button>
+
+                        <p class="text-xs text-gray-400 text-center">
+                            Al enviar este formulario aceptas que nos pongamos en contacto contigo.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    // ====== Stats counter animation ======
+    (function () {
+        const counters = document.querySelectorAll('.stat-counter');
+        if (!counters.length) return;
+
+        const animateCounter = (el) => {
+            const target = parseInt(el.dataset.target, 10);
+            const suffix = el.dataset.suffix || '';
+            const duration = 1800;
+            const step = Math.ceil(target / (duration / 16));
+            let current = 0;
+
+            const tick = () => {
+                current = Math.min(current + step, target);
+                el.textContent = current + suffix;
+                if (current < target) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        counters.forEach(el => observer.observe(el));
+    })();
+
+    // ====== CTA Form handling (WhatsApp) ======
+    (function () {
+        const form = document.getElementById('cta-form');
+        const successMsg = document.getElementById('cta-form-success');
+        if (!form) return;
+
+        // --- Math captcha setup ---
+        const a = Math.floor(Math.random() * 9) + 1;
+        const b = Math.floor(Math.random() * 9) + 1;
+        const captchaAnswer = a + b;
+        const label = document.getElementById('cta-captcha-label');
+        if (label) label.textContent = `Verificación: ¿cuánto es ${a} + ${b}? *`;
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const nombre   = document.getElementById('cta-nombre').value.trim();
+            const edad     = document.getElementById('cta-edad').value.trim();
+            const telefono = document.getElementById('cta-telefono').value.trim();
+            const mensaje  = document.getElementById('cta-mensaje').value.trim();
+            const honeypot = document.getElementById('cta-hp').value;
+            const captcha  = parseInt(document.getElementById('cta-captcha').value, 10);
+
+            // Honeypot check — bot detected if filled
+            if (honeypot) return;
+
+            // Required fields
+            if (!nombre || !edad || !telefono) {
+                [document.getElementById('cta-nombre'), document.getElementById('cta-edad'), document.getElementById('cta-telefono')].forEach(input => {
+                    if (!input.value.trim()) {
+                        input.classList.add('border-red-400', 'ring-2', 'ring-red-200');
+                        setTimeout(() => input.classList.remove('border-red-400', 'ring-2', 'ring-red-200'), 2000);
+                    }
+                });
+                return;
+            }
+
+            // Math captcha check
+            if (captcha !== captchaAnswer) {
+                const captchaInput = document.getElementById('cta-captcha');
+                captchaInput.classList.add('border-red-400', 'ring-2', 'ring-red-200');
+                captchaInput.value = '';
+                captchaInput.placeholder = 'Respuesta incorrecta, inténtalo de nuevo';
+                setTimeout(() => {
+                    captchaInput.classList.remove('border-red-400', 'ring-2', 'ring-red-200');
+                    captchaInput.placeholder = 'Tu respuesta';
+                }, 3000);
+                return;
+            }
+
+            let text = `Hola! Me gustaría reservar una clase gratuita.%0A%0A`
+                      + `*Nombre:* ${nombre}%0A`
+                      + `*Edad del alumno:* ${edad} años%0A`
+                      + `*Teléfono:* ${telefono}`;
+            if (mensaje) text += `%0A*Comentario:* ${mensaje}`;
+
+            window.open(`https://wa.me/34676362738?text=${text}`, '_blank');
+
+            setTimeout(() => {
+                form.classList.add('hidden');
+                successMsg.classList.remove('hidden');
+                successMsg.classList.add('flex');
+            }, 600);
+        });
+    })();
+    </script>
+@endsection
