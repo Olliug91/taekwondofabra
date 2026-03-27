@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('title', 'Preguntas Frecuentes - Taekwondo Fabra')
+@section('meta_description', 'Resolvemos tus dudas sobre el Taekwondo en Valencia: edades, equipación, beneficios y cómo empezar en nuestro club.')
+
 
 @section('content')
     <div class="container mx-auto px-4 py-16">

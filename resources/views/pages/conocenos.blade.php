@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('title', 'Conócenos - Taekwondo Fabra')
+@section('meta_description', 'Conoce la historia del Club Taekwondo Fabra Valencia, fundado por Guillermo Fabra. Conoce a nuestros entrenadores Lidia y Guillermo.')
+
 
 @section('content')
     <div class="container mx-auto px-4 py-16 max-w-7xl">

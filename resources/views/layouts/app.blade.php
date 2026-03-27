@@ -18,6 +18,21 @@
         content="@yield('meta_description', 'Taekwondo en Valencia: clases desde 3-4 años, competición, valores, disciplina y diversión. Taekwondo Fabra Valencia.')">
     <link rel="canonical" href="{{ url()->current() }}">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="@yield('title', 'Taekwondo Fabra Valencia')">
+    <meta property="og:description" content="@yield('meta_description', 'Taekwondo en Valencia: clases desde 3-4 años, competición, valores, disciplina y diversión. Taekwondo Fabra Valencia.')">
+    <meta property="og:image" content="{{ asset('storage/img/slide1.jpg') }}">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ url()->current() }}">
+    <meta property="twitter:title" content="@yield('title', 'Taekwondo Fabra Valencia')">
+    <meta property="twitter:description" content="@yield('meta_description', 'Taekwondo en Valencia: clases desde 3-4 años, competición, valores, disciplina y diversión. Taekwondo Fabra Valencia.')">
+    <meta property="twitter:image" content="{{ asset('storage/img/slide1.jpg') }}">
+
+
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -42,9 +57,27 @@
                     <li><a href="{{ route('conocenos') }}"
                             class="font-heading text-lg hover:underline decoration-2 underline-offset-4">CONÓCENOS</a>
                     </li>
-                    <li><a href="https://federacion.tkdcv.es/federacion/app/nosession.php?permiso=campeonato"
-                            target="_blank"
-                            class="font-heading text-lg hover:underline decoration-2 underline-offset-4">COMPETICIONES</a>
+                    <li class="relative group">
+                        <button class="font-heading text-lg hover:underline decoration-2 underline-offset-4 flex items-center gap-1 cursor-default">
+                            COMPETICIONES
+                            <svg class="w-3.5 h-3.5 mt-0.5 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <ul class="absolute left-0 top-full mt-1 w-56 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <li>
+                                <a href="https://federacion.tkdcv.es/federacion/app/nosession.php?permiso=campeonato" target="_blank"
+                                   class="flex items-center gap-2 px-4 py-3 text-gray-700 hover:bg-cyan-50 hover:text-cyan-brand text-sm font-semibold transition-colors">
+                                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                                    Federación FTCV
+                                </a>
+                            </li>
+                            <li class="border-t border-gray-50">
+                                <a href="https://www.uptkd.com" target="_blank"
+                                   class="flex items-center gap-2 px-4 py-3 text-gray-700 hover:bg-cyan-50 hover:text-cyan-brand text-sm font-semibold transition-colors">
+                                    <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                    UPTKD
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li><a href="{{ route('faq') }}"
                             class="font-heading text-lg hover:underline decoration-2 underline-offset-4">PREGUNTAS
@@ -113,8 +146,21 @@
                     <li><a href="{{ route('home') }}" class="font-heading text-lg hover:underline">HOME</a></li>
                     <li><a href="{{ route('conocenos') }}" class="font-heading text-lg hover:underline">CONÓCENOS</a>
                     </li>
-                    <li><a href="https://federacion.tkdcv.es/federacion/app/nosession.php?permiso=campeonato"
-                            target="_blank" class="font-heading text-lg hover:underline">COMPETICIONES</a></li>
+                    <li>
+                        <div class="font-heading text-xs text-white/50 mb-1 mt-2 uppercase tracking-widest">Competiciones</div>
+                        <div class="flex flex-col gap-3 pl-2">
+                            <a href="https://federacion.tkdcv.es/federacion/app/nosession.php?permiso=campeonato"
+                                target="_blank" class="font-heading text-lg hover:underline flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                                Federación FTCV
+                            </a>
+                            <a href="https://www.uptkd.com"
+                                target="_blank" class="font-heading text-lg hover:underline flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                UPTKD
+                            </a>
+                        </div>
+                    </li>
                     <li><a href="{{ route('faq') }}" class="font-heading text-lg hover:underline">PREGUNTAS
                             FRECUENTES</a></li>
                 </ul>

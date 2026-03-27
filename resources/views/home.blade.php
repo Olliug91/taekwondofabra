@@ -7,53 +7,48 @@
     <section id="hero-slider" class="relative h-[100dvh] md:h-[700px] overflow-hidden group">
         <div class="slides-container h-full w-full relative">
             @foreach($slides as $idx => $slide)
-                <div class="slide flex flex-col md:flex-row h-full w-full absolute top-0 left-0 transition-opacity duration-1000 ease-in-out {{ $idx === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none' }}"
+                <div class="slide h-full w-full absolute top-0 left-0 transition-opacity duration-1000 ease-in-out {{ $idx === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none' }}"
                     data-index="{{ $idx }}">
-                    <div
-                        class="w-full md:w-1/2 h-[65%] md:h-full flex flex-col justify-start md:justify-center items-start p-8 pt-24 md:p-24 text-left text-white relative z-10 {{ $slide['bg'] }}">
+                    
+                    <div class="flex flex-col md:flex-row h-full w-full relative">
+                        <!-- Content Container -->
+                        {{-- 60% height on mobile, 50% width on desktop --}}
+                        <div class="relative w-full h-[60%] md:h-full md:w-1/2 flex flex-col justify-end md:justify-center items-start p-6 pb-12 md:p-24 text-left text-white z-20 {{ $slide['bg'] }}">
+                            
+                            <!-- Gradient Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/60 via-transparent to-transparent pointer-events-none"></div>
 
-                        <!-- Gradient Overlay for better contrast -->
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black/60 via-transparent to-transparent pointer-events-none">
+                            <div class="relative z-30 max-w-2xl">
+                                <h1 class="animate-fade-in text-3xl md:text-6xl lg:text-7xl mb-4 md:mb-6 leading-tight md:leading-none font-heading tracking-tight drop-shadow-md">
+                                    {!! $slide['title'] !!}
+                                </h1>
+                                <p class="animate-fade-in delay-100 font-body text-base md:text-xl mb-6 md:mb-8 leading-relaxed text-gray-100 drop-shadow-sm max-w-lg {{ !empty($slide['bold']) ? 'font-bold' : '' }}">
+                                    {{ $slide['text'] }}
+                                </p>
+
+                                @if(!empty($slide['cta_text']))
+                                    <a href="{{ $slide['cta_link'] }}" @if(!empty($slide['cta_external'])) target="_blank" @endif
+                                        class="animate-fade-in delay-200 inline-block bg-white text-cyan-brand font-heading font-bold text-sm md:text-lg px-6 md:px-8 py-2.5 md:py-3 rounded-full hover:bg-cyan-900 hover:text-white transition-all transform hover:scale-105 shadow-xl border-2 border-transparent hover:border-white">
+                                        {{ $slide['cta_text'] }}
+                                    </a>
+                                @endif
+                            </div>
                         </div>
 
-                        <!-- Mobile Blend Gradient for Slide 3 (PNG) -->
-                        @if(str_contains($slide['src'], 'slide3.png'))
-                            <div
-                                class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-cyan-500/50 md:hidden pointer-events-none">
-                            </div>
-                        @endif
-
-                        <div class="relative z-20 max-w-2xl">
-                            <h1
-                                class="animate-fade-in text-4xl md:text-6xl lg:text-7xl mb-6 leading-none font-heading tracking-tight drop-shadow-md">
-                                {!! $slide['title'] !!}
-                            </h1>
-                            <p
-                                class="animate-fade-in delay-100 font-body text-lg md:text-xl mb-8 leading-relaxed text-gray-100 drop-shadow-sm max-w-lg {{ !empty($slide['bold']) ? 'font-bold' : '' }}">
-                                {{ $slide['text'] }}
-                            </p>
-
-                            @if(!empty($slide['cta_text']))
-                                <a href="{{ $slide['cta_link'] }}" @if(!empty($slide['cta_external'])) target="_blank" @endif
-                                    class="animate-fade-in delay-200 inline-block bg-white text-cyan-brand font-heading font-bold text-lg px-8 py-3 rounded-full hover:bg-cyan-900 hover:text-white transition-all transform hover:scale-105 shadow-xl border-2 border-transparent hover:border-white">
-                                    {{ $slide['cta_text'] }}
-                                </a>
+                        <!-- Image/Video Container -->
+                        {{-- 40% height on mobile, 50% width on desktop --}}
+                        <div class="relative w-full h-[40%] md:h-full md:w-1/2 overflow-hidden {{ $slide['bg'] }}">
+                            @if($slide['type'] === 'video')
+                                <video src="{{ $slide['src'] }}" autoplay muted loop playsinline preload="metadata"
+                                    class="absolute inset-0 w-full h-full object-cover"></video>
+                            @else
+                                <div class="w-full h-full bg-cover {{ $slide['bg_pos'] ?? 'bg-center' }} transform transition-transform duration-[10000ms] ease-linear scale-100 hover:scale-110"
+                                    style="background-image:url('{{ $slide['src'] }}')">
+                                </div>
                             @endif
+                            <!-- Overlay for visual consistency -->
+                            <div class="absolute inset-0 bg-black/10 md:bg-transparent"></div>
                         </div>
-                    </div>
-
-                    <div class="w-full md:w-1/2 h-[35%] md:h-full relative overflow-hidden {{ $slide['bg'] }}">
-                        @if($slide['type'] === 'video')
-                            <video src="{{ $slide['src'] }}" autoplay muted loop playsinline preload="metadata"
-                                class="absolute inset-0 w-full h-full object-cover"></video>
-                        @else
-                            <div class="w-full h-full bg-cover {{ $slide['bg_pos'] ?? 'bg-center' }} transform transition-transform duration-[10000ms] ease-linear scale-100 hover:scale-110"
-                                style="background-image:url('{{ $slide['src'] }}')">
-                            </div>
-                        @endif
-                        <!-- Overlay for visual consistency -->
-                        <div class="absolute inset-0 bg-black/10 md:bg-transparent"></div>
                     </div>
                 </div>
             @endforeach
@@ -237,7 +232,12 @@
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-heading text-gray-900 mb-4">Horarios de Clase</h2>
                 <p class="text-xl text-cyan-brand font-bold uppercase tracking-wider">Lunes, Miércoles y Viernes</p>
+                <div class="mt-4 inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-700 font-bold text-sm px-4 py-2 rounded-full">
+                    <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                    Sin matrícula — solo pagas la cuota mensual
+                </div>
             </div>
+
 
             <div class="max-w-6xl mx-auto">
                 <!-- Desktop Schedule Table (Hidden on Mobile) -->
