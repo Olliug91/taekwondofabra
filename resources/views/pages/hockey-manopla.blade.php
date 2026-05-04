@@ -441,105 +441,7 @@
     }
   }
 
-  /* Market Section Styles */
-  .market-header {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start; 
-    flex-wrap: wrap; 
-    gap: 32px;
-  }
 
-  .market-rules {
-    flex: 1.5; 
-    min-width: 300px;
-  }
-
-  .market-draft-order {
-    flex: 1; 
-    min-width: 280px;
-  }
-
-  .rules-container {
-    background: rgba(91, 214, 255, 0.05); 
-    border: 1px dashed rgba(91, 214, 255, 0.3); 
-    border-radius: 20px; 
-    padding: 24px; 
-    margin: 24px 0;
-  }
-
-  .draft-columns {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px;
-  }
-
-  .status-badge {
-    background: rgba(91, 214, 255, 0.1); 
-    border: 1px solid rgba(91, 214, 255, 0.2); 
-    padding: 4px 12px; 
-    border-radius: 20px; 
-    font-size: 11px; 
-    color: var(--accent); 
-    font-weight: 700; 
-    display: flex; 
-    align-items: center; 
-    gap: 8px;
-  }
-
-  .market-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
-    border: 1px solid var(--glass-border);
-    border-radius: 16px;
-    padding: 16px;
-    transition: all 0.3s ease;
-    border: 1px solid var(--line);
-  }
-
-  .market-card:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: var(--accent);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  }
-
-  .draft-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: rgba(255, 255, 255, 0.03);
-    padding: 10px 16px;
-    border-radius: 12px;
-    border: 1px solid var(--line);
-    transition: all 0.3s ease;
-  }
-
-  .draft-item:hover {
-    background: rgba(91, 214, 255, 0.05);
-    border-color: rgba(91, 214, 255, 0.3);
-  }
-
-  .star-pill {
-    background: rgba(255, 215, 0, 0.1);
-    color: #ffd700;
-    border: 1px solid rgba(255, 215, 0, 0.2);
-    padding: 2px 8px;
-    border-radius: 6px;
-    font-size: 10px;
-    font-weight: 800;
-    text-transform: uppercase;
-  }
-
-  .regular-pill {
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--muted);
-    border: 1px solid var(--line);
-    padding: 2px 8px;
-    border-radius: 6px;
-    font-size: 10px;
-    font-weight: 800;
-    text-transform: uppercase;
-  }
 </style>
 </head>
 
@@ -599,11 +501,10 @@
             </h3>
             <ul>
               <li>Jesús López Gonzalez (49)</li>
-              <li>Nicolas Castro (14)</li>
               <li>Juan José Pardo (17)</li>
               <li>Tajmandeep Singh (15)</li>
               <li>Ainhoa Martinez (10)</li>
-              <li>Carla Taroncher (10)</li>
+              <li>Nerea Rafael (13)</li>
             </ul>
           </div>
 
@@ -621,10 +522,10 @@
             <ul>
               <li>Juan Manuel Martinez (48)</li>
               <li>Vicente Castro (17)</li>
-              <li>Lucia Martinez (13)</li>
               <li>Rodrigo Lopez (15)</li>
               <li>Nouhaila Laagel (19)</li>
-              <li>Nerea Rafael (13)</li>
+              <li>Rafa Otero (27)</li>
+              <li>Carla Taroncher (10)</li>
             </ul>
           </div>
 
@@ -640,9 +541,9 @@
               <span class="pill">Equipo</span>
             </h3>
             <ul>
-              <li>Rafa Otero (27)</li>
               <li>Jesús Lopez Rojas (13)</li>
               <li>Alula Rawat (15)</li>
+              <li>Lucia Martinez (13)</li>
               <li>Martina Esteban (15)</li>
               <li>Claudia Lopez (15)</li>
             </ul>
@@ -729,168 +630,7 @@
         <p><strong>Respeto · Esfuerzo · Compañerismo · Disciplina</strong></p>
       </section>
 
-      <section class="card span-12" id="mercado">
-        <div class="market-header">
-          <div class="market-rules">
-            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px; flex-wrap: wrap;">
-              <h2 style="margin: 0;">💸 Mercado de Fichajes</h2>
-              <span class="status-badge" style="background: rgba(34, 197, 94, 0.1); border-color: rgba(34, 197, 94, 0.2); color: #22c55e;">
-                <span class="status-dot" style="background: #22c55e; box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);"></span> MERCADO ABIERTO
-              </span>
-            </div>
-            <p>Se abre el periodo de traspasos para equilibrar la liga. Los equipos con menos puntos tienen la prioridad para elegir nuevos refuerzos.</p>
 
-            <div class="rules-container">
-              <h4 style="margin-top: 0; color: var(--accent); font-size: 18px; margin-bottom: 12px;">Reglas del Mercado:</h4>
-              <ul style="margin: 0; padding-left: 20px; color: var(--text); line-height: 1.6;">
-                <li style="margin-bottom: 8px;"><strong>Draft Serpiente:</strong> Ronda 1 (1º a 4º). Ronda 2 (Invertida: 4º a 1º).</li>
-                <li style="margin-bottom: 8px;"><strong>Intercambio Puro:</strong> Al fichar a uno nuevo, sale uno de los que estaba en el mercado.</li>
-                <li><strong>Identidad:</strong> Los equipos mantienen su nombre, puntos y escudo tras los fichajes.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="market-draft-order">
-            <h3 style="margin-top: 10px; margin-bottom: 16px; font-size: 20px;">📋 Orden de Elección</h3>
-            
-            <div class="draft-columns">
-              <!-- RONDA 1 -->
-              <div>
-                <div style="font-size: 11px; text-transform: uppercase; color: var(--accent); font-weight: 800; margin-bottom: 12px; letter-spacing: 0.1em;">Ronda 1</div>
-                <div style="display: flex; flex-direction: column; gap: 8px;">
-                  <div class="draft-item" style="padding: 10px 14px;">
-                    <span style="font-weight: 800; color: var(--accent); width: 24px;">1º</span>
-                    <img src="storage/hockey-manopla/tigres.png" style="width: 24px; height: 24px;">
-                    <span>Tigres</span>
-                  </div>
-                  <div class="draft-item" style="padding: 10px 14px;">
-                    <span style="font-weight: 800; color: var(--accent); width: 24px;">2º</span>
-                    <img src="storage/hockey-manopla/halcones.png" style="width: 24px; height: 24px;">
-                    <span>Halcones</span>
-                  </div>
-                  <div class="draft-item" style="padding: 10px 14px;">
-                    <span style="font-weight: 800; color: var(--accent); width: 24px;">3º</span>
-                    <img src="storage/hockey-manopla/lobos.png" style="width: 24px; height: 24px;">
-                    <span>Lobos</span>
-                  </div>
-                  <div class="draft-item" style="padding: 10px 14px;">
-                    <span style="font-weight: 800; color: var(--accent); width: 24px;">4º</span>
-                    <img src="storage/hockey-manopla/dragones.png" style="width: 24px; height: 24px;">
-                    <span>Dragones</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- RONDA 2 -->
-              <div>
-                <div style="font-size: 11px; text-transform: uppercase; color: var(--muted); font-weight: 800; margin-bottom: 12px; letter-spacing: 0.1em;">Ronda 2</div>
-                <div style="display: flex; flex-direction: column; gap: 8px;">
-                  <div class="draft-item" style="padding: 10px 14px; border-color: rgba(255,255,255,0.05);">
-                    <span style="font-weight: 800; color: var(--muted); width: 24px;">5º</span>
-                    <img src="storage/hockey-manopla/dragones.png" style="width: 24px; height: 24px;">
-                    <span>Dragones</span>
-                  </div>
-                  <div class="draft-item" style="padding: 10px 14px; border-color: rgba(255,255,255,0.05);">
-                    <span style="font-weight: 800; color: var(--muted); width: 24px;">6º</span>
-                    <img src="storage/hockey-manopla/lobos.png" style="width: 24px; height: 24px;">
-                    <span>Lobos</span>
-                  </div>
-                  <div class="draft-item" style="padding: 10px 14px; border-color: rgba(255,255,255,0.05);">
-                    <span style="font-weight: 800; color: var(--muted); width: 24px;">7º</span>
-                    <img src="storage/hockey-manopla/halcones.png" style="width: 24px; height: 24px;">
-                    <span>Halcones</span>
-                  </div>
-                  <div class="draft-item" style="padding: 10px 14px; border-color: rgba(255,255,255,0.05);">
-                    <span style="font-weight: 800; color: var(--muted); width: 24px;">8º</span>
-                    <img src="storage/hockey-manopla/tigres.png" style="width: 24px; height: 24px;">
-                    <span>Tigres</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <p class="small" style="margin-top: 20px; opacity: 0.6; font-style: italic; line-height: 1.4;">
-              * Sistema de serpiente: El último de la ronda 1 es el primero de la ronda 2.
-            </p>
-          </div>
-        </div>
-
-        <h3 style="margin-top: 40px; border-bottom: 1px solid var(--line); padding-bottom: 12px; margin-bottom: 24px;">🏃 Jugadores Disponibles</h3>
-        
-        <div class="grid" style="margin-top: 0; gap: 24px;">
-          <!-- DRAGONES MARKET -->
-          <div class="span-6 market-card" style="grid-column: span 6;">
-            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-              <img src="storage/hockey-manopla/dragones.png" style="width: 32px; height: 32px;">
-              <h4 style="margin: 0; color: #fff;">Dragones</h4>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-              <div class="draft-item">
-                <span class="regular-pill" style="background: rgba(167, 139, 250, 0.1); color: var(--accent2); border-color: rgba(167, 139, 250, 0.2);">Transferible</span>
-                <span>Jesús López Gonzalez (49)</span>
-              </div>
-              <div class="draft-item">
-                <span class="regular-pill" style="background: rgba(167, 139, 250, 0.1); color: var(--accent2); border-color: rgba(167, 139, 250, 0.2);">Transferible</span>
-                <span>Carla Taroncher (10)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- TIGRES MARKET -->
-          <div class="span-6 market-card" style="grid-column: span 6;">
-            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-              <img src="storage/hockey-manopla/tigres.png" style="width: 32px; height: 32px;">
-              <h4 style="margin: 0; color: #fff;">Tigres</h4>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-              <div class="draft-item">
-                <span class="regular-pill" style="background: rgba(167, 139, 250, 0.1); color: var(--accent2); border-color: rgba(167, 139, 250, 0.2);">Transferible</span>
-                <span>Nerea Rafael (13)</span>
-              </div>
-              <div class="draft-item">
-                <span class="regular-pill" style="background: rgba(167, 139, 250, 0.1); color: var(--accent2); border-color: rgba(167, 139, 250, 0.2);">Transferible</span>
-                <span>Lucia Martinez (13)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- LOBOS MARKET -->
-          <div class="span-6 market-card" style="grid-column: span 6;">
-            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-              <img src="storage/hockey-manopla/lobos.png" style="width: 32px; height: 32px;">
-              <h4 style="margin: 0; color: #fff;">Lobos</h4>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-              <div class="draft-item">
-                <span class="regular-pill" style="background: rgba(167, 139, 250, 0.1); color: var(--accent2); border-color: rgba(167, 139, 250, 0.2);">Transferible</span>
-                <span>Rafa Otero (27)</span>
-              </div>
-              <div class="draft-item">
-                <span class="regular-pill" style="background: rgba(167, 139, 250, 0.1); color: var(--accent2); border-color: rgba(167, 139, 250, 0.2);">Transferible</span>
-                <span>Martina Esteban (15)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- HALCONES MARKET -->
-          <div class="span-6 market-card" style="grid-column: span 6;">
-            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
-              <img src="storage/hockey-manopla/halcones.png" style="width: 32px; height: 32px;">
-              <h4 style="margin: 0; color: #fff;">Halcones</h4>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 10px;">
-              <div class="draft-item">
-                <span class="regular-pill" style="background: rgba(167, 139, 250, 0.1); color: var(--accent2); border-color: rgba(167, 139, 250, 0.2);">Transferible</span>
-                <span>Miguel Fernandez (13)</span>
-              </div>
-              <div class="draft-item">
-                <span class="regular-pill" style="background: rgba(167, 139, 250, 0.1); color: var(--accent2); border-color: rgba(167, 139, 250, 0.2);">Transferible</span>
-                <span>Irene Garcia (15)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
 
 
@@ -1116,46 +856,39 @@
               <tr>
                 <td>03/04/2026</td>
                 <td class="center"><span class="pill">J4</span></td>
-                <td><strong>🦅 Halcones</strong> vs <strong>🐺 Lobos</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🦅 <strong>__</strong>
-                  |
-                  🐺 <strong>__</strong>
+                <td>
+                  <strong>🦅 Halcones</strong> vs <strong>🐺 Lobos</strong><br>
+                  <span class="pill" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); font-size: 9px; margin-top: 4px; display: inline-block;">Pendiente de nueva fecha</span>
                 </td>
-                <td><strong>🐉 Dragones</strong> vs <strong>🐯 Tigres</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🐉 <strong>__</strong>
-                  |
-                  🐯 <strong>__</strong>
+                <td>
+                  <strong>🐉 Dragones</strong> vs <strong>🐯 Tigres</strong><br>
+                  <span class="pill" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); font-size: 9px; margin-top: 4px; display: inline-block;">Pendiente de nueva fecha</span>
                 </td>
               </tr>
 
               <tr>
                 <td>10/04/2026</td>
                 <td class="center"><span class="pill">J2</span></td>
-                <td><strong>🐉 Dragones</strong> vs <strong>🐺 Lobos</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🐉 <strong>__</strong>
-                  |
-                  🐺 <strong>__</strong>
+                <td>
+                  <strong>🐉 Dragones</strong> vs <strong>🐺 Lobos</strong><br>
+                  <span class="pill" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); font-size: 9px; margin-top: 4px; display: inline-block;">Pendiente de nueva fecha</span>
                 </td>
-                <td><strong>🦅 Halcones</strong> vs <strong>🐯 Tigres</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🦅 <strong>__</strong>
-                  |
-                  🐯 <strong>__</strong>
+                <td>
+                  <strong>🦅 Halcones</strong> vs <strong>🐯 Tigres</strong><br>
+                  <span class="pill" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); font-size: 9px; margin-top: 4px; display: inline-block;">Pendiente de nueva fecha</span>
                 </td>
               </tr>
 
               <tr>
                 <td>17/04/2026</td>
                 <td class="center"><span class="pill">J3</span></td>
-                <td><strong>🐯 Tigres</strong> vs <strong>🐺 Lobos</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🐯 <strong>__</strong>
-                  |
-                  🐺 <strong>__</strong>
+                <td>
+                  <strong>🐯 Tigres</strong> vs <strong>🐺 Lobos</strong><br>
+                  <span class="pill" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); font-size: 9px; margin-top: 4px; display: inline-block;">Pendiente de nueva fecha</span>
                 </td>
-                <td><strong>🐉 Dragones</strong> vs <strong>🦅 Halcones</strong><br><span
-                    class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🐉 <strong>__</strong>
-                  |
-                  🦅 <strong>__</strong>
+                <td>
+                  <strong>🐉 Dragones</strong> vs <strong>🦅 Halcones</strong><br>
+                  <span class="pill" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); font-size: 9px; margin-top: 4px; display: inline-block;">Pendiente de nueva fecha</span>
                 </td>
               </tr>
 
@@ -1163,14 +896,14 @@
                 <td>24/04/2026</td>
                 <td class="center"><span class="pill">J4</span></td>
                 <td><strong>🦅 Halcones</strong> vs <strong>🐺 Lobos</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🦅 <strong>__</strong>
+                  <strong>3</strong> - <strong>2</strong><br><span class="small">Puntos:</span> 🦅 <strong>3</strong>
                   |
-                  🐺 <strong>__</strong>
+                  🐺 <strong>0</strong>
                 </td>
                 <td><strong>🐉 Dragones</strong> vs <strong>🐯 Tigres</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🐉 <strong>__</strong>
+                  <strong>3</strong> - <strong>3</strong><br><span class="small">Puntos:</span> 🐉 <strong>1</strong>
                   |
-                  🐯 <strong>__</strong>
+                  🐯 <strong>1</strong>
                 </td>
               </tr>
 
@@ -1346,50 +1079,50 @@
                <tr>
                 <td class="center">1</td>
                 <td>🐺 Lobos</td>
-                <td class="center">11</td>
+                <td class="center">12</td>
                 <td class="center">10</td>
                 <td class="center">0</td>
-                <td class="center">1</td>
-                <td class="center">25</td>
-                <td class="center">14</td>
-                <td class="center">+11</td>
+                <td class="center">2</td>
+                <td class="center">27</td>
+                <td class="center">17</td>
+                <td class="center">+10</td>
                 <td class="center">30</td>
               </tr>
               <tr>
                 <td class="center">2</td>
                 <td>🐉 Dragones</td>
-                <td class="center">13</td>
+                <td class="center">14</td>
                 <td class="center">7</td>
-                <td class="center">1</td>
+                <td class="center">2</td>
                 <td class="center">5</td>
-                <td class="center">25</td>
-                <td class="center">23</td>
+                <td class="center">28</td>
+                <td class="center">26</td>
                 <td class="center">+2</td>
-                <td class="center">22</td>
+                <td class="center">23</td>
               </tr>
               <tr>
                 <td class="center">3</td>
                 <td>🦅 Halcones</td>
-                <td class="center">12</td>
-                <td class="center">2</td>
+                <td class="center">13</td>
+                <td class="center">3</td>
                 <td class="center">3</td>
                 <td class="center">7</td>
-                <td class="center">19</td>
-                <td class="center">24</td>
-                <td class="center">-5</td>
-                <td class="center">9</td>
+                <td class="center">22</td>
+                <td class="center">26</td>
+                <td class="center">-4</td>
+                <td class="center">12</td>
               </tr>
               <tr>
                 <td class="center">4</td>
                 <td>🐯 Tigres</td>
-                <td class="center">12</td>
+                <td class="center">13</td>
                 <td class="center">2</td>
-                <td class="center">2</td>
+                <td class="center">3</td>
                 <td class="center">8</td>
-                <td class="center">23</td>
-                <td class="center">31</td>
+                <td class="center">26</td>
+                <td class="center">34</td>
                 <td class="center">-8</td>
-                <td class="center">8</td>
+                <td class="center">9</td>
               </tr>
             </tbody>
           </table>
@@ -1414,15 +1147,15 @@
             <tbody>
               <tr>
                 <td>Jesus Lopez Rojas (Lobos)</td>
-                <td class="center">20</td>
+                <td class="center">22</td>
               </tr>
               <tr>
                 <td>Miguel Fernandez (Halcones)</td>
-                <td class="center">10</td>
+                <td class="center">11</td>
               </tr>
               <tr>
                 <td>Oussama Ezzine (Halcones)</td>
-                <td class="center">9</td>
+                <td class="center">10</td>
               </tr>
               <tr>
                 <td>Nicolas Castro (Dragones)</td>
@@ -1430,10 +1163,14 @@
               </tr>
               <tr>
                 <td>Jesus Lopez Gonzalez (Dragones)</td>
-                <td class="center">7</td>
+                <td class="center">8</td>
               </tr>
               <tr>
-                <td>Nerea Rafael (Tigres)</td>
+                <td>Vicente Castro (Tigres)</td>
+                <td class="center">5</td>
+              </tr>
+              <tr>
+                <td>Nerea Rafael (Dragones)</td>
                 <td class="center">5</td>
               </tr>
               <tr>
@@ -1441,7 +1178,11 @@
                 <td class="center">4</td>
               </tr>
               <tr>
-                <td>Vicente Castro (Tigres)</td>
+                <td>Samuel Peña (Halcones)</td>
+                <td class="center">3</td>
+              </tr>
+              <tr>
+                <td>Rafa Otero (Tigres)</td>
                 <td class="center">3</td>
               </tr>
               <tr>
@@ -1449,15 +1190,7 @@
                 <td class="center">3</td>
               </tr>
               <tr>
-                <td>Samuel Peña (Halcones)</td>
-                <td class="center">2</td>
-              </tr>
-              <tr>
                 <td>Rodrigo Lopez (Tigres)</td>
-                <td class="center">2</td>
-              </tr>
-              <tr>
-                <td>Rafa Otero (Lobos)</td>
                 <td class="center">2</td>
               </tr>
               <tr>
@@ -1477,7 +1210,15 @@
                 <td class="center">1</td>
               </tr>
               <tr>
-                <td>Carla Taroncher (Dragones)</td>
+                <td>Carla Taroncher (Tigres)</td>
+                <td class="center">1</td>
+              </tr>
+              <tr>
+                <td>Ainhoa Martinez (Dragones)</td>
+                <td class="center">1</td>
+              </tr>
+              <tr>
+                <td>Tajmandeep Singh (Dragones)</td>
                 <td class="center">1</td>
               </tr>
             </tbody>
