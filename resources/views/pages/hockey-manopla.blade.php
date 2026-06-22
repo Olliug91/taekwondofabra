@@ -855,45 +855,6 @@
               </tr>
 
               <tr>
-                <td>03/04/2026</td>
-                <td class="center"><span class="pill">J4</span></td>
-                <td>
-                  <strong>🦅 Halcones</strong> vs <strong>🐺 Lobos</strong><br>
-                  <span class="pill" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); font-size: 9px; margin-top: 4px; display: inline-block;">Pendiente de nueva fecha</span>
-                </td>
-                <td>
-                  <strong>🐉 Dragones</strong> vs <strong>🐯 Tigres</strong><br>
-                  <span class="pill" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); font-size: 9px; margin-top: 4px; display: inline-block;">Pendiente de nueva fecha</span>
-                </td>
-              </tr>
-
-              <tr>
-                <td>10/04/2026</td>
-                <td class="center"><span class="pill">J2</span></td>
-                <td>
-                  <strong>🐉 Dragones</strong> vs <strong>🐺 Lobos</strong><br>
-                  <span class="pill" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); font-size: 9px; margin-top: 4px; display: inline-block;">Pendiente de nueva fecha</span>
-                </td>
-                <td>
-                  <strong>🦅 Halcones</strong> vs <strong>🐯 Tigres</strong><br>
-                  <span class="pill" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); font-size: 9px; margin-top: 4px; display: inline-block;">Pendiente de nueva fecha</span>
-                </td>
-              </tr>
-
-              <tr>
-                <td>17/04/2026</td>
-                <td class="center"><span class="pill">J3</span></td>
-                <td>
-                  <strong>🐯 Tigres</strong> vs <strong>🐺 Lobos</strong><br>
-                  <span class="pill" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); font-size: 9px; margin-top: 4px; display: inline-block;">Pendiente de nueva fecha</span>
-                </td>
-                <td>
-                  <strong>🐉 Dragones</strong> vs <strong>🦅 Halcones</strong><br>
-                  <span class="pill" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b; border-color: rgba(245, 158, 11, 0.2); font-size: 9px; margin-top: 4px; display: inline-block;">Pendiente de nueva fecha</span>
-                </td>
-              </tr>
-
-              <tr>
                 <td>24/04/2026</td>
                 <td class="center"><span class="pill">J4</span></td>
                 <td><strong>🦅 Halcones</strong> vs <strong>🐺 Lobos</strong><br><span class="small">Resultado:</span>
@@ -1000,33 +961,17 @@
               </tr>
 
               <tr>
-                <td>19/06/2026</td>
-                <td class="center"><span class="pill">J3</span></td>
-                <td><strong>🐯 Tigres</strong> vs <strong>🐺 Lobos</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🐯 <strong>__</strong>
-                  |
-                  🐺 <strong>__</strong>
-                </td>
-                <td><strong>🐉 Dragones</strong> vs <strong>🦅 Halcones</strong><br><span
-                    class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🐉 <strong>__</strong>
-                  |
-                  🦅 <strong>__</strong>
-                </td>
-              </tr>
-
-              <tr>
                 <td>26/06/2026</td>
                 <td class="center"><span class="pill">J4</span></td>
-                <td><strong>🦅 Halcones</strong> vs <strong>🐺 Lobos</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🦅 <strong>__</strong>
-                  |
-                  🐺 <strong>__</strong>
-                </td>
-                <td><strong>🐉 Dragones</strong> vs <strong>🐯 Tigres</strong><br><span class="small">Resultado:</span>
-                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🐉 <strong>__</strong>
+                <td><strong>🐺 Lobos</strong> vs <strong>🐯 Tigres</strong><br><span class="small">Resultado:</span>
+                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🐺 <strong>__</strong>
                   |
                   🐯 <strong>__</strong>
+                </td>
+                <td><strong>🐺 Lobos</strong> vs <strong>🦅 Halcones</strong><br><span class="small">Resultado:</span>
+                  <strong>__</strong> - <strong>__</strong><br><span class="small">Puntos:</span> 🐺 <strong>__</strong>
+                  |
+                  🦅 <strong>__</strong>
                 </td>
               </tr>
             </tbody>
