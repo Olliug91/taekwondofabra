@@ -35,6 +35,9 @@
 
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <!-- Structured Data -->
+    @yield('structured_data')
 </head>
 
 <body>

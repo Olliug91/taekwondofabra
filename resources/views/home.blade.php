@@ -1,6 +1,41 @@
 @extends('layouts.app')
 @section('title', 'Taekwondo Fabra Valencia | Clases de Taekwondo en Valencia')
 @section('meta_description', 'Clases de Taekwondo en Valencia desde 3-4 años. Iniciación, cadete y junior/senior. Club federado y equipo de competición.')
+
+@section('structured_data')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsClub",
+  "name": "Taekwondo Fabra Valencia",
+  "image": "{{ asset('storage/img/slide3.png') }}",
+  "url": "{{ url('/') }}",
+  "telephone": [
+    "+34676362738",
+    "+34963463389"
+  ],
+  "email": "guillo@taekwondofabra.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Rosales 27, Bajo-Izquierda",
+    "addressLocality": "Valencia",
+    "addressRegion": "Valencia",
+    "postalCode": "46025",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.4891157,
+    "longitude": -0.3892784
+  },
+  "sameAs": [
+    "https://www.instagram.com/tkd_fitnessfabragym/",
+    "https://www.facebook.com/tkdfitnessfabragym"
+  ]
+}
+</script>
+@endsection
+
 @section('content')
     <style>
         .reveal-on-scroll {

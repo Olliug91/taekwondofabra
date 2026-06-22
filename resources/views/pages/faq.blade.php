@@ -3,6 +3,105 @@
 @section('title', 'Preguntas Frecuentes - Taekwondo Fabra')
 @section('meta_description', 'Resolvemos tus dudas sobre el Taekwondo en Valencia: edades, equipación, beneficios y cómo empezar en nuestro club.')
 
+@section('structured_data')
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es el Taekwondo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Taekwondo es un arte marcial de origen Coreano, que tiene su origen en 1955 tras independizarse Corea del dominio japonés. Su significado literal es el camino «DO» del pie «TAE» y del puño «KWON», y tras su inclusión en el programa olímpico en Sidney 2000, se caracteriza en el dominio de las patadas, convirtiéndolo así en un deporte de contacto de distancias largas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuáles son los principios del Taekwondo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los principios fundamentales son: Cortesía (construir un carácter noble y entrenar de forma ordenada y disciplinada), Integridad (saber establecer los límites entre lo bueno y lo malo), Autocontrol (de vital importancia tanto dentro como fuera del dojang), Perseverancia (ser paciente ante las dificultades para alcanzar un objetivo) y Espíritu indomable (ser modesto y honrado, actuando con espíritu combativo ante la injusticia)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué experiencia tienen los profesores?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El Club Taekwondo Fabra fue fundado en el año 2000 por los hermanos Fabra. En 2013, Lidia Carbonell y Guillermo Tudela asumieron la dirección. Ambos son Cinturón Negro 4º Dan (desde 2023), Árbitros Nacionales y poseen la titulación oficial de Técnico Deportivo Nivel 2 (Generalitat Valenciana y FTCV), contando con más de una década de experiencia docente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué beneficios tiene el Taekwondo para mi hij@?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mejora la forma física general, aumenta la flexibilidad, previene dolores posturales mediante el fortalecimiento muscular, mejora la resistencia cardiovascular, desarrolla la coordinación y el equilibrio, reduce el estrés, y fomenta la disciplina, el autocontrol, la confianza y las relaciones sociales basadas en el respeto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es el uniforme de Taekwondo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El practicante de Taekwondo debe entrenar con el uniforme oficial denominado «dobok». Es un uniforme que consta de dos piezas, pantalón y chaqueta cerrada. Esta última se ajusta con el cinturón correspondiente al grado que posea el practicante."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué se llevan cinturones de colores?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En Taekwondo existe un sistema jerárquico simbolizado mediante los cinturones. La jerarquía de menor a mayor es: Blanco, Blanco-Amarillo (menores de 14), Amarillo, Amarillo-Naranja (menores de 14), Naranja, Naranja-Verde (menores de 14), Verde, Verde-Azul (menores de 14), Azul, Azul-Rojo (menores de 14), Rojo y Negro (1º a 9º Dan). Estos grados se obtienen mediante exámenes evaluados por el maestro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué consiste un examen de cinturón?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El examen contempla la parte Física, la parte Técnica (dominio de movimientos base) y la parte de Aplicación (combate y defensa personal). El club dispone de guías oficiales adaptadas según la categoría del alumno (Iniciación, Cadete, Junior/Adulto)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es un poomsae?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un Poomsae es una coreografía de movimientos, ataques y defensas, que engloba la técnica aprendida y que sirve como parte del examen para evaluar al alumno. Estas coreografías están reconocidas mundialmente por la World Taekwondo y sirven como base de competición."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué mi hij@ no se examina de cinturón?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El paso al siguiente grado es propuesto por el maestro cuando considera que el alumno está preparado. Los criterios para proponer a examen incluyen: tener la licencia en vigor, cumplir el tiempo mínimo de permanencia en el cinturón actual, actitud positiva y proactiva, esfuerzo, progresión física/técnica, buena conducta y asistencia regular."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se puede competir en Taekwondo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, existen dos modalidades oficiales de competición: Poomsae (técnica/coreografía) y Combate (enfrentamiento cuerpo a cuerpo). El club posee un equipo de competición que participa activamente en eventos federados."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué mi hij@ no forma parte del equipo de competición?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Para formar parte del equipo de competición exigimos una implicación extra en entrenamientos debido al alto nivel y exigencia de los eventos. Seleccionamos individualmente a cada miembro cuando está física, técnica y mentalmente preparado para asegurar una experiencia positiva."
+      }
+    }
+  ]
+}
+</script>
+@endsection
+
 
 @section('content')
     <div class="container mx-auto px-4 py-16">
