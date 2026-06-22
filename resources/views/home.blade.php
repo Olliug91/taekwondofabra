@@ -5,8 +5,8 @@
 @section('structured_data')
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "SportsClub",
+  "@@context": "https://schema.org",
+  "@@type": "SportsClub",
   "name": "Taekwondo Fabra Valencia",
   "image": "{{ asset('storage/img/slide3.png') }}",
   "url": "{{ url('/') }}",
@@ -16,7 +16,7 @@
   ],
   "email": "guillo@taekwondofabra.com",
   "address": {
-    "@type": "PostalAddress",
+    "@@type": "PostalAddress",
     "streetAddress": "Calle Rosales 27, Bajo-Izquierda",
     "addressLocality": "Valencia",
     "addressRegion": "Valencia",
@@ -24,7 +24,7 @@
     "addressCountry": "ES"
   },
   "geo": {
-    "@type": "GeoCoordinates",
+    "@@type": "GeoCoordinates",
     "latitude": 39.4891157,
     "longitude": -0.3892784
   },
