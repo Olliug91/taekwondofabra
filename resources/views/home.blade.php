@@ -584,12 +584,13 @@
                                         alt="Disponible en Google Play"
                                         class="h-14">
                                 </a>
-                            </div>
-                            <div>
-                                <p class="text-sm text-gray-400 mb-2 font-medium">Próximamente en:</p>
-                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                <a href="https://apps.apple.com/es/app/tkd-fabra-basicsoft-club/id6761184702" target="_blank" class="inline-block transform transition-transform hover:scale-105">
+                                     <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                                     alt="Consíguelo en el App Store"
                                     class="h-10 opacity-50 grayscale cursor-not-allowed">
+                                </a>
+                            
+                               
                             </div>
                         </div>
                     </div>
@@ -1106,4 +1107,4 @@
     })();
 
     </script>
-@endsection
+@endsection
