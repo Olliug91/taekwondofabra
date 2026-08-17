@@ -653,46 +653,17 @@
     </section>
 
 
-    <!-- Programs -->
-    <section id="programas" class="py-20 bg-white reveal-on-scroll">
-
-        <div class="container mx-auto px-4">
-            <h2 class="text-center text-4xl mb-16 font-heading text-gray-900">Nuestras Guías de Examen</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Iniciacion -->
-                <div
-                    class="bg-white rounded-3xl p-8 shadow-md border-t-8 border-red-600 hover:shadow-xl transition-all duration-300">
-                    <h3 class="text-2xl text-red-600 font-bold mb-2">Iniciación</h3>
-                    <p class="text-gray-500 font-bold mb-4">3 - 7 años</p>
-                    <p class="mb-6 text-gray-600">Desarrollo psicomotriz y primeros pasos en el taekwondo. Aprender jugando.
-                    </p>
-                    <a href="/storage/pdf/Guia_examen_Infantil.pdf"
-                        class="btn btn-outline border-red-600 text-red-600 hover:bg-red-600 w-full text-center">Descargar
-                        Guía</a>
-                </div>
-
-                <!-- Cadete -->
-                <div
-                    class="bg-white rounded-3xl p-8 shadow-md border-t-8 border-blue-600 hover:shadow-xl transition-all duration-300 transform scale-105">
-                    <h3 class="text-2xl text-blue-600 font-bold mb-2">Cadete</h3>
-                    <p class="text-gray-500 font-bold mb-4">8 - 13 años</p>
-                    <p class="mb-6 text-gray-600">Perfeccionamiento técnico, disciplina y valores. Preparación para
-                        competición.</p>
-                    <a href="/storage/pdf/Guia_Examen_8-13anos_V2.pdf"
-                        class="btn btn-primary bg-blue-600 hover:bg-blue-700 w-full text-center">Descargar Guía</a>
-                </div>
-
-                <!-- Junior -->
-                <div
-                    class="bg-white rounded-3xl p-8 shadow-md border-t-8 border-black hover:shadow-xl transition-all duration-300">
-                    <h3 class="text-2xl text-black font-bold mb-2">Junior / Senior</h3>
-                    <p class="text-gray-500 font-bold mb-4">+14 años</p>
-                    <p class="mb-6 text-gray-600">Alto rendimiento, defensa personal y mantenimiento físico.</p>
-                    <a href="/storage/pdf/Guia_examen_JuniorAdulto.pdf"
-                        class="btn btn-outline border-black text-black hover:bg-black w-full text-center">Descargar
-                        Guía</a>
-                </div>
+    <!-- Programs (Exam Viewer) -->
+    <section id="programas" class="py-20 bg-gray-50 reveal-on-scroll">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-heading text-cyan-brand mb-4">Programa de Exámenes</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    Selecciona tu grupo de edad y cinturón actual para ver los requisitos de tu próximo examen de grado.
+                </p>
             </div>
+
+            <livewire:exam-viewer />
         </div>
     </section>
 

@@ -1,0 +1,260 @@
+{
+    "iniciacion": [
+        {
+            "belt": "Blanco-Amarillo",
+            "physical": "· Elevación de piernas máxima altura:minimo altura cabeza\n· Apertura de piernas en suelo: horizontal",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Olgul Maki: Defensa arriba",
+            "attacks": "·Momtong bande jirugui: Puñetazo al medio",
+            "kicks": "·Ap chagui: Patada frontal",
+            "poomsae": "·1º Kicho",
+            "application_kicks": "·Tuio ap chagui con manopla: patada frontal con salto de altura",
+            "application_combination": "-",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak"
+        },
+        {
+            "belt": "Amarillo",
+            "physical": "· Elevación de piernas máxima altura:minimo altura cabeza\n· Apertura de piernas en suelo: horizontal",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba",
+            "attacks": "· Momtong bande jirugui: Puñetazo al medio\n·Momtong baro jirigui: Puñetazo al medio a pie cambiado",
+            "kicks": "·Ap chagui: Patada frontal",
+            "poomsae": "·1º Kicho \n·2º Kicho",
+            "application_kicks": "·Tuio ap chagui con manopla: patada frontal con salto de altura",
+            "application_combination": "-",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak"
+        },
+        {
+            "belt": "Amarillo-Naranja",
+            "physical": "· Elevación de piernas máxima altura:minimo altura cabeza\n· Apertura de piernas en suelo: horizontal\n· Apertura de dentro hacia afuera y fuera dentro",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n·Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba",
+            "attacks": "· Momtong bande jirugui: Puñetazo al medio\n·Momtong baro jirigui: Puñetazo al medio a pie cambiado",
+            "kicks": "·Ap chagui: Patada frontal\n·Bandal chagui: Patada circular al estómago",
+            "poomsae": "·2º Kicho \n·1º Poomsae",
+            "application_kicks": "· Bandal chagui a la manopla: patada semicircular a la altura del estomago\n·Tuio ap chagui con manopla: patada frontal con salto de altura\n· Tuio yop chagui con conos: patada lateral con salto de altura",
+            "application_combination": "-",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo"
+        },
+        {
+            "belt": "Naranja",
+            "physical": "· Elevación de piernas máxima altura:minimo altura cabeza\n· Apertura de piernas en suelo: horizontal\n· Apertura de dentro hacia afuera y fuera dentro",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba",
+            "attacks": "·Momtong bande jirugui: Puñetazo al medio\n·Momtong baro jirigui: Puñetazo al medio a pie cambiado\n·Olgul bande jirugui: Puñetazo a la cara misma pierna mismo brazo",
+            "kicks": "·Ap chagui: Patada frontal\n·Bandal chagui: Patada circular al estómago\n·Dollyo chagui: Patada circular a la cara",
+            "poomsae": "·1º Poomsae \n·2º Poomsae",
+            "application_kicks": "· Bandal chagui a la manopla: patada semicircular a la altura del estomago\n· Dollyo chagui a la manopla: patada circular a la altura de la cara\n·Tuio ap chagui con manopla: patada frontal con salto de altura\n· Tuio yop chagui con conos: patada lateral con salto de altura",
+            "application_combination": "·1. Ap chagui, bandal chagui, ap chagui\n·2. Dollyo chagui, bandal chagui, dollyo chagui",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo\nDesplacen correctamente"
+        },
+        {
+            "belt": "Naranja-Verde",
+            "physical": "· Elevación de piernas máxima altura:minimo altura cabeza\n· Apertura de piernas en suelo: horizontal\n· Apertura de dentro hacia afuera y fuera dentro\n· Spagat\n· 5 flexiones\n· 10 abdominales",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante\n·Tuit kubi sogui: Paso largo hacia detrás",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba\n· Jansonnal momtong bakat maki: Defensa al medio con un canto de la mano",
+            "attacks": "·Momtong bande jirugui: Puñetazo al medio\n·Momtong baro jirigui: Puñetazo al medio a pie cambiado\n·Olgul bande jirugui: Puñetazo a la cara misma pierna mismo brazo\n·Sonnal an chigui: Ataque al cuello con un canto de la mano a pie cambiado\n·Momtong dubong jirugui: Ataque dos puños al medio",
+            "kicks": "·Ap chagui: Patada frontal\n·Bandal chagui: Patada circular al estómago\n·Dollyo chagui: Patada circular a la cara\n·Neryo chagui: Patada de arriba a abajo",
+            "poomsae": "·3º Poomsae",
+            "application_kicks": "· Bandal chagui a la manopla: patada semicircular a la altura del estomago\n· Dollyo chagui a la manopla: patada circular a la altura de la cara\n·Tuio ap chagui con manopla: patada frontal con salto de altura\n· Tuio yop chagui con conos: patada lateral con salto de altura",
+            "application_combination": "·1. Neryo chagui, Ap chagui, neryo chagui\n·2. Ap chagui, neryo chagui, dollyo chagui",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo\nDesplacen correctamente\nAtaquen y contrataquen"
+        },
+        {
+            "belt": "Verde",
+            "physical": "· Elevación de piernas máxima altura:minimo altura cabeza\n· Apertura de piernas en suelo: horizontal\n· Apertura de dentro hacia afuera y fuera dentro\n· Spagat\n· 5 flexiones\n· 10 abdominales",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante\n·Tuit kubi sogui: Paso largo hacia detrás",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba\n· Jansonnal momtong bakat maki: Defensa al medio con un canto de la mano\n· Sonnal momtong maki: Defensa al medio con dos cantos de la mano\n· Momtong bajar maki: Defensa al medio de dentro hacia afuera\n·Chebipum mok chigui: Defensa arriba y ataque al cuello",
+            "attacks": "·Momtong bande jirugui: Puñetazo al medio\n·Momtong baro jirigui: Puñetazo al medio a pie cambiado\n·Olgul bande jirugui: Puñetazo a la cara misma pierna mismo brazo\n·Sonnal an chigui: Ataque al cuello con un canto de la mano a pie cambiado\n·Momtong dubong jirugui: Ataque dos puños al medio\n·Dung chumock ape chigui: Ataque a la boca con el dorso del puño(nudillos)\n·Pionson kut seuo jirugui: Ataque con la punta de los dedos a la boca del estómago",
+            "kicks": "·Ap chagui: Patada frontal\n·Bandal chagui: Patada circular al estómago\n·Dollyo chagui: Patada circular a la cara\n·Neryo chagui: Patada de arriba a abajo\n·Yop chagui: Patada lateral",
+            "poomsae": "·3º Poomsae \n·4º Poomsae",
+            "application_kicks": "· Bandal chagui a la manopla: patada semicircular a la altura del estomago\n· Dollyo chagui a la manopla: patada circular a la altura de la cara\n· Neryo chagui a la manopla: patada descendente a la altura de la cara\n·Tuio ap chagui con manopla: patada frontal con salto de altura\n· Tuio yop chagui con conos: patada lateral con salto de altura",
+            "application_combination": "·1. Dollyo chagui, yop chagui, dollyo chagui\n·2. Ap chagui, neryo chagui, Ap chagui",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo\nDesplacen correctamente\nAtaquen y contrataquen"
+        }
+    ],
+    "cadete": [
+        {
+            "belt": "Blanco-Amarillo",
+            "physical": "· Elevación de piernas máxima altura(frontal, fuera hacia dentro, dentro hacia fuera):minimo altura pecho\n· Apertura de piernas en suelo: horizontal (sin mínimo)",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Olgul Maki: Defensa arriba",
+            "attacks": "·Momtong bande jirugui: Puñetazo al medio",
+            "kicks": "·Ap chagui: Patada frontal\n·Bandal chagui: Patada circular al estómago",
+            "poomsae": "1º Kicho",
+            "application_kicks": " - Bandal chagui\n - Miro adelantado + bandal chagui atrasado",
+            "application_combination": "No procede",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo"
+        },
+        {
+            "belt": "Amarillo",
+            "physical": "· Elevación de piernas máxima altura(frontal, fuera hacia dentro, dentro hacia fuera):minimo altura pecho\n· Apertura de piernas en suelo: horizontal (sin mínimo)\n· 8 Flexiones\n· 10 Abdominales superiores",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba",
+            "attacks": "·Momtong bande jirugui: Puñetazo al medio\n·Momtong baro jirigui: Puñetazo al medio. apie cambiado",
+            "kicks": "·Ap chagui: Patada frontal\n·Bandal chagui: Patada circular al estómago\n·Dollyo chagui: Patada circular a la cara",
+            "poomsae": "1º Poomsae",
+            "application_kicks": " - Bandal chagui\n - Miro adelantado + bandal chagui atrasado",
+            "application_combination": "1. Ap chagui, bandal chagui, ap chagui\n2. Dollyo chagui, bandal chagui, dollyo chagui",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo\nDesplacen correctamente"
+        },
+        {
+            "belt": "Amarillo-Naranja",
+            "physical": "· Elevación de piernas máxima altura(frontal, fuera hacia dentro, dentro hacia fuera):minimo altura cabeza\n· Apertura de piernas en suelo: horizontal (sin mínimo)\n·10 Flexiones\n·10 Abdominales superiores",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba",
+            "attacks": "·Momtong bande jirugui: Puñetazo al medio\n·Momtong baro jirigui: Puñetazo al medio. apie cambiado\n·Olgul bande jirugui: Puñetazo a la cara misma pierna mismo brazo",
+            "kicks": "·Ap chagui: Patada frontal\n·Bandal chagui: Patada circular al estómago\n·Dollyo chagui: Patada circular a la cara",
+            "poomsae": "2º Poomsae",
+            "application_kicks": " - Bandal chagui\n - Miro adelantado + bandal chagui atrasado",
+            "application_combination": "1. Ap chagui, bandal chagui, ap chagui\n2. Dollyo chagui, bandal chagui, dollyo chagui",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo\nDesplacen correctamente"
+        },
+        {
+            "belt": "Naranja",
+            "physical": "· Elevación de piernas máxima altura(frontal, fuera hacia dentro, dentro hacia fuera):minimo altura cabeza\n· Apertura de piernas en suelo: horizontal (sin mínimo)\n· 10 Flexiones\n· 10 Abdominales superiores\n· 8 Abdominales inferiores",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante\n·Tuit kubi sogui: Paso largo hacia detrás",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba\n· Jansonnal momtong bakat maki: Defensa al medio con un canto de la mano",
+            "attacks": "·Momtong bande jirugui: Puñetazo al medio\n·Momtong baro jirigui: Puñetazo al medio. apie cambiado\n·Olgul bande jirugui: Puñetazo a la cara misma pierna mismo brazo\n·Sonnal an chigui: Ataque al cuello con un canto de la mano a pie cambiado\n·Momtong dubong jirugui: Ataque dos puños al medio",
+            "kicks": "·Ap chagui: Patada frontal\n·Bandal chagui: Patada circular al estómago\n·Dollyo chagui: Patada circular a la cara\n·Neryo chagui: Patada de arriba a abajo",
+            "poomsae": "3º Poomsae",
+            "application_kicks": " - Miro adelantado + doble bandal chagui atrasado \n - Miro adelantado + dolyo adelantado(misma pierna)\n - Mondolyo tuit chagui en salto",
+            "application_combination": "1. Neryo chagui, Ap chagui, neryo chagui\n2. Ap chagui, neryo chagui, dollyo chagui",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo\nDesplacen correctamente"
+        },
+        {
+            "belt": "Naranja-Verde",
+            "physical": "· Elevación de piernas máxima altura(frontal, fuera hacia dentro, dentro hacia fuera):minimo altura cabeza\n· Apertura de piernas en suelo: horizontal (sin mínimo)\n· 10 Flexiones\n· 10 Abdominales superiores\n· 8 Abdominales inferiores\n· Plancha 20 segundos",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante\n·Tuit kubi sogui: Paso largo hacia detrás",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba\n· Jansonnal momtong bakat maki: Defensa al medio con un canto de la mano\n· Sonnal momtong maki: Defensa al medio con dos cantos de la mano\n· Momtong bajar maki: Defensa al medio de dentro hacia afuera\n· Chebipum mok chigui: Defensa arriba y ataque al cuello",
+            "attacks": "·Momtong bande jirugui: Puñetazo al medio\n·Momtong baro jirugui: Puñetazo al medio. apie cambiado\n·Olgul bande jirugui: Puñetazo a la cara misma pierna mismo brazo\n·Sonnal an chigui: Ataque al cuello con un canto de la mano a pie cambiado\n·Momtong dubong jirugui: Ataque dos puños al medio\n·Dung chumock ape chigui: Ataque a la boca con los nudillos\n·Pionson kut seuo jirugui: Ataque con los dedos a la boca del estómago",
+            "kicks": "·Ap chagui: Patada frontal\n·Bandal chagui: Patada circular al estómago\n·Dollyo chagui: Patada circular a la cara\n·Neryo chagui: Patada de arriba a abajo\n·Yop chagui: Patada lateral",
+            "poomsae": "4º Poomsae",
+            "application_kicks": " - Miro adelantado + doble bandal chagui atrasado \n - Miro adelantado + dolyo adelantado(misma pierna)\n - Mondolyo tuit chagui en salto",
+            "application_combination": "1. Neryo chagui, Ap chagui, neryo chagui\n2. Ap chagui, neryo chagui, dollyo chagui",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo\nDesplacen correctamente\nAtaquen y contrataquen"
+        },
+        {
+            "belt": "Verde",
+            "physical": "· Elevación de piernas máxima altura(frontal, fuera hacia dentro, dentro hacia fuera):minimo altura cabeza\n· Apertura de piernas en suelo: horizontal (sin mínimo)\n· Apertura de piernas en spagat(sin mínimo)\n· 10 Flexiones\n· 10 Abdominales superiores\n· 10 Abdominales inferiores\n· Plancha 20 segundos",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante\n·Tuit kubi sogui: Paso largo hacia detrás\n·Chuchum sogui: Posicion de montar a caballo",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba\n· Jansonnal momtong bakat maki: Defensa al medio con un canto de la mano\n· Sonnal momtong maki: Defensa al medio con dos cantos de la mano\n· Momtong bajar maki: Defensa al medio de dentro hacia afuera\n· Chebipum mok chigui: Defensa arriba y ataque al cuello",
+            "attacks": "·Momtong bande jirugui: Puñetazo al medio\n·Momtong baro jirugui: Puñetazo al medio. apie cambiado\n·Olgul bande jirugui: Puñetazo a la cara misma pierna mismo brazo\n·Sonnal an chigui: Ataque al cuello con un canto de la mano a pie cambiado\n·Momtong dubong jirugui: Ataque dos puños al medio\n·Dung chumock ape chigui: Ataque a la boca con los nudillos\n·Pionson kut seuo jirugui: Ataque con los dedos a la boca del estómago",
+            "kicks": "·Ap chagui: Patada frontal\n·Bandal chagui: Patada circular al estómago\n·Dollyo chagui: Patada circular a la cara\n·Neryo chagui: Patada de arriba a abajo\n·Yop chagui: Patada lateral",
+            "poomsae": "·3º Poomsae \n·4º Poomsae",
+            "application_kicks": " - Miro adelantado + doble bandal chagui atrasado + mondolyo tuit chagui en salto\n - Desplazamiento lateral y contrataque de anneryo chagui(neryo fuera hacia dentro) en respuesta a un ataque directo de miro chagui adelantado\n - Pibote bandal chagui",
+            "application_combination": "1. Dollyo chagui, yop chagui, dollyo chagui\n2. Ap chagui, neryo chagui, Ap chagui",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo\nDesplacen correctamente\nAtaquen y contrataquen"
+        },
+        {
+            "belt": "Verde-Azul",
+            "physical": "· Elevación de piernas máxima altura\n· Apertura de piernas en suelo: horizontal\n· Apertura de piernas en spagat\n.15 Flexiones\n.15 Abdominales superiores\n.15 Abdominales inferiores\n. Plancha 20 segundos\n.Spagat",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante\n·Tuit kubi sogui: Paso largo hacia detrás\n·Moa sogui: Posición de firmes(chariot)\n·Naranji sogui: Posición de chumbi\n·Tuit koa sogui: Paso largo con apoyo de pierna trasera en gemelo\n·Orun sogui: Paso a la derecha\n·Uen sogui: Paso a la izquierda\n·Chuchum sogui: Posicion de montar a caballo",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n. Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba\n· Jansonnal momtong bakat maki: Defensa al medio con un canto de la mano\n· Sonnal momtong maki: Defensa al medio con dos cantos de la mano\n· Momtong bakat maki: Defensa al medio de dentro hacia afuera\n· Chebipum mok chigui: Defensa arriba y ataque al cuello",
+            "attacks": "·Momtong bande jirugui: Puñetazo al medio\n·Momtong baro jirugui: Puñetazo al medio. apie cambiado\n·Olgul bande jirugui: Puñetazo a la cara misma pierna mismo brazo\n·Sonnal an chigui: Ataque al cuello con un canto de la mano a pie cambiado\n·Momtong dubong jirugui: Ataque dos puños al medio\n·Dung chumock ape chigui: Ataque a la boca con los nudillos\n·Pionson kut seuo jirugui: Ataque con los dedos a la boca del estómago\n·Me chumock neryop yop chigui: Ataque clavícula de arriba a abajo\n·Palkup dollyo chigui: Ataque con el codo circular\n. Momtong palkup piochock chigui: ataque con el codo al medio con agarre(diana)",
+            "kicks": "·Ap chagui: Patada frontal\n·Bandal chagui: Patada circular al estómago\n·Dollyo chagui: Patada circular a la cara\n·Neryo chagui: Patada de arriba a abajo\n·Yop chagui: Patada lateral",
+            "poomsae": "5º Poomsae y anteriores",
+            "application_kicks": " - Miro adelantado + doble bandal chagui atrasado + mondolyo tuit chagui en salto\n - Desplazamiento lateral y contrataque de anneryo chagui en respuesta a un ataque directo de miro chagui adelantado\n - Pibote bandal chagui",
+            "application_combination": "1. Dollyo chagui, yop chagui, dollyo chagui\n2. Ap chagui, neryo chagui, Ap chagui\n3. Yop chagui, dollyo chagui, neryo chagui",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo\nDesplacen correctamente\nAtaquen y contrataquen"
+        },
+        {
+            "belt": "Azul",
+            "physical": "· Elevación de piernas máxima altura\n· Apertura de piernas en suelo: horizontal\n· Apertura de piernas en spagat\n· 15 Flexiones\n· 15 Abdominales superiores\n· 15 Abdominales inferiores\n· Plancha 30 segundos",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante\n·Tuit kubi sogui: Paso largo hacia detrás\n·Moa sogui: Posición de firmes\n·Naranji sogui: Posición de chumbi\n·Tuit koa sogui: Paso largo con apoyo\n·Orun sogui: Paso a la derecha\n·Uen sogui: Paso a la izquierda\n·Chuchum sogui: Posicion de montar a caballo",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba\n· Jansonnal momtong bakat maki\n· Sonnal momtong maki\n· Momtong bakat maki\n· Chebipum mok chigui\n· (Pum) Bituro jansonnal olgul bakat maki\n· Batagson momtong maki\n· Gechio are maki",
+            "attacks": "·Momtong bande jirugui\n·Momtong baro jirugui\n·Olgul bande jirugui\n·Sonnal an chigui\n·Momtong dubong jirugui\n·Dung chumock ape chigui\n·Pionson kut seuo jirugui\n·Me chumock neryop yop chigui\n·Palkup dollyo chigui\n. Momtong palkup piochock chigui\n. (Pum) Bo chumok chumbi",
+            "kicks": "·Ap chagui: Patada frontal\n·Bandal chagui: Patada circular\n·Dollyo chagui: Patada circular\n·Neryo chagui: Patada descendente\n·Yop chagui: Patada lateral\n·Nacko chagui: Patada de gancho\n·Mondollyo yop chagui: Patada lateral con giro previo",
+            "poomsae": "6º Poomsae y anteriores",
+            "application_kicks": " - Miro adelantado + bituro chagui + pibote bandal chagui + doble bandal chagui\n - Contrataque a la bajada libre\n - Mondolyo nako chagui",
+            "application_combination": "1. Ap chagui, neryo chagui, Ap chagui\n2. Yop chagui, dollyo chagui, neryo chagui\n3. AP chagui, yop chagui, mondollyo top chagui",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo\nDesplacen correctamente\nAtaquen y contrataquen"
+        },
+        {
+            "belt": "Azul-Rojo",
+            "physical": "· Elevación de piernas máxima altura\n· Apertura de piernas en suelo: horizontal\n· Apertura de piernas en spagat\n· 20 Flexiones\n· 30 Abdominales superiores\n· 30 Abdominales inferiores\n· Plancha 30 segundos",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante\n·Tuit kubi sogui: Paso largo hacia detrás\n·Moa sogui: Posición de firmes\n·Naranji sogui: Posición de chumbi\n·Tuit koa sogui: Paso largo con apoyo\n·Orun sogui: Paso a la derecha\n·Uen sogui: Paso a la izquierda\n·Bom sogui: posicion corta con rodilla delantera elevada\n·Chuchum sogui: Posicion de montar a caballo",
+            "defenses": "· Are Maki\n· Momtong maki\n· Momtong an maki\n· Olgul Maki\n. Olgul bakat Maki\n· Jansonnal momtong bakat maki\n· Sonnal momtong maki\n· Momtong bakat maki\n· Chebipum mok chigui\n·(Pum) Bituro jansonnal olgul bakat maki\n· Batagson momtong maki\n. Batagson montong an maki\n· Gechio are maki\n· Goduro batagson momtong an maki\n. (Pum) Kawi Maki\n· Gechio momtong maki\n· Okgoro are maki\n· Jan sonnal momtong yop maki",
+            "attacks": "·Momtong bande jirugui\n·Momtong baro jirugui\n·Olgul bande jirugui\n·Sonnal an chigui\n·Momtong dubong jirugui\n·Dung chumock ape chigui\n·Pionson kut seuo jirugui\n·Me chumock neryop yop chigui\n·Palkup dollyo chigui\n·Momtong palkup piochock chigui\n·Du che cho jirugui\n·Dung chumok bakat chigui\n.Yop Jirugui\n. (Pum) Bo chumok chumbi",
+            "kicks": "·Ap chagui\n·Bandal chagui\n·Dollyo chagui\n·Neryo chagui\n·Yop chagui\n·Nacko chagui\n·Mondollyo yop chagui\n·Piochock chigui",
+            "poomsae": "7º Poomsae y anteriores",
+            "application_kicks": " - Miro adelantado + bituro chagui + pibote bandal chagui + doble bandal chagui\n - Contrataque a la bajada libre\n - Mondolyo nako chagui",
+            "application_combination": "1. Ap chagui, neryo chagui, Ap chagui\n2. Yop chagui, dollyo chagui, neryo chagui\n3. AP chagui, yop chagui, mondollyo top chagui",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo\nDesplacen correctamente\nAtaquen y contrataquen"
+        },
+        {
+            "belt": "Rojo",
+            "physical": "· Elevación de piernas máxima altura\n· Apertura de piernas en suelo\n· Apertura de piernas en spagat\n· 20 Flexiones\n· 30 Abdominales superiores\n· 30 Abdominales inferiores\n· Fondos de tríceps 20 repeticiones\n· Plancha 30 segundos",
+            "stances": "·Ap sogui\n·Ap kubi sogui\n·Tuit kubi sogui\n·Moa sogui\n·Naranji sogui\n·Tuit koa sogui\n·Orun sogui\n·Uen sogui\n·Bom sogui\n·Chuchum sogui",
+            "defenses": "· Are Maki\n· Momtong maki\n· Momtong an maki\n· Olgul Maki\n. Olgul bakat Maki\n· Jansonnal momtong bakat maki\n· Sonnal momtong maki\n· Momtong bakat maki\n· (Pum) Chebipum mok chigui\n. (Pum) Kawi Maki\n· (Pum) Bituro jansonnal olgul bakat maki\n· Batagson momtong maki\n. Batagson montong an maki\n· Gechio are maki\n· Goduro batagson momtong an maki\n· Gechio momtong maki\n· Okgoro are maki\n· Jan sonnal momtong yop maki\n· Goduro momtong maki\n· Goduro are maki\n·(Pum) Oe santul maki",
+            "attacks": "·Momtong bande jirugui\n·Momtong baro jirigui\n·Olgul bande jirugui\n·Sonnal an chigui\n·Momtong dubong jirugui\n·Dung chumock ape chigui\n·Pionson kut seuo jirugui\n·Me chumock neryop yop chigui\n·Du che cho jirugui\n·Dung chumok bakat chigui\n·(Pum) Dankio Tok jirugui\n·Palkup dollyo chigui\n·Dankio Ollyo Murup Chigui\n·(Pum) Kibon Chumbi\n.(Pum) Montong Palkup Piochok Chigui\n. (Pum) Bo chumok chumbi",
+            "kicks": "·Ap chagui\n·Bandal chagui\n·Dollyo chagui\n·Neryo chagui\n·Yop chagui\n·Nacko chagui\n·Mondollyo yop chagui\n·Piochock chigui\n·Mondollyo nacko chagui",
+            "poomsae": "8º Poomsae y anteriores",
+            "application_kicks": " - Explicar y ejecutar una acción\/acciones en ataque\n - Explicar y ejecutar una acción\/acciones en contraataque",
+            "application_combination": "2. Yop chagui, dollyo chagui, neryo chagui \n3. AP chagui, yop chagui, mondollyo top chagui",
+            "application_kyorugi": "Que sepan seguir las órdenes de Chariot, Kionye, Chumbi Shijak\nQue tengan claras las zonas de golpeo\nDesplacen correctamente\nAtaquen y contrataquen"
+        }
+    ],
+    "junior_adulto": [
+        {
+            "belt": "Amarillo",
+            "physical": "· Elevación de piernas máxima altura\n· Apertura de piernas en suelo: horizontal (sin mínimo)\n· 8 Flexiones\n· 10 Abdominales superiores",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba",
+            "attacks": "· Momtong bande jirugui: Puñetazo al medio\n· Momtong baro jirigui: Puñetazo al medio. apie cambiado",
+            "kicks": "· Ap chagui: Patada frontal\n· Bandal chagui: Patada circular al estómago\n· Miro chagui: Patada empujon\n· Dollyo chagui: Patada circular a la cara",
+            "poomsae": "1º Poomsae",
+            "application_kicks": " - Bandal chagui\n - Miro adelantado + bandal chagui atrasado",
+            "application_combination": "·1. Ap chagui, bandal chagui, ap chagui\n·2. Dollyo chagui, bandal chagui, dollyo chagui",
+            "application_kyorugi": "·Saber seguir las órdenes de chariot, kione, chubi sijak\n·Saber las zonas de golpeo\n·Desplazar correctamente"
+        },
+        {
+            "belt": "Naranja",
+            "physical": "· Elevación de piernas máxima altura\n· Apertura de piernas en suelo: horizontal (sin mínimo)\n· 10 Flexiones\n· 10 Abdominales superiores\n· 8 Abdominales inferiores",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n. Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba\n. Jansonnal momtong bakat maki: Defensa al medio con un canto de la mano",
+            "attacks": "· Momtong bande jirugui: Puñetazo al medio\n· Momtong baro jirigui: Puñetazo al medio. apie cambiado\n· Olgul bande jirugui: Puñetazo a la cara misma pierna mismo brazo\n· Sonnal an chigui: Ataque al cuello con un canto de la mano a pie cambiado\n· Momtong dubong jirugui: Ataque dos puños al medio",
+            "kicks": "· Ap chagui: Patada frontal\n· Bandal chagui: Patada circular al estómago\n· Dollyo chagui: Patada circular a la cara\n· Miro chagui: Patada empujon\n· Neryo chagui: Patada de arriba a abajo",
+            "poomsae": "2º Poomsae",
+            "application_kicks": " - Miro adelantado + doble bandal chagui atrasado \n - Miro adelantado + dolyo adelantado(misma pierna)\n - Mondolyo tuit chagui en salto",
+            "application_combination": "·1. Neryo chagui, Ap chagui, neryo chagui\n·2. Ap chagui, neryo chagui, dollyo chagui",
+            "application_kyorugi": "·Saber seguir las órdenes de chariot, kione, chubi sijak\n·Saber las zonas de golpeo\n·Desplazar correctamente"
+        },
+        {
+            "belt": "Verde",
+            "physical": "· Elevación de piernas máxima altura\n· Apertura de piernas en suelo: horizontal\n· Apertura de piernas en spagat(sin mínimo)\n· 10 Flexiones\n· 10 Abdominales superiores\n· 10 Abdominales inferiores\n· Plancha 20 segundos",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante\n·Tuit kubi sogui: Paso largo hacia detrás\n·Chuchum sogui: Posicion de montar a caballo\n·Moa sogui: Posición de firmes(chariot)",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba\n· Jansonnal momtong bakat maki: Defensa al medio con un canto de la mano\n· Sonnal momtong maki: Defensa al medio con dos cantos de la mano\n· Momtong bajar maki: Defensa al medio de dentro hacia afuera\n· Chebipum mok chigui: Defensa arriba y ataque al cuello",
+            "attacks": "· Momtong bande jirugui: Puñetazo al medio\n· Momtong baro jirigui: Puñetazo al medio. apie cambiado\n· Olgul bande jirugui: Puñetazo a la cara misma pierna mismo brazo\n· Sonnal an chigui: Ataque al cuello con un canto de la mano a pie cambiado\n· Momtong dubong jirugui: Ataque dos puños al medio\n· Dung chumock ape chigui: Ataque a la boca con los nudillos\n· Pionson kut seuo jirugui: Ataque con los dedos a la boca del estómago",
+            "kicks": "· Ap chagui: Patada frontal\n· Bandal chagui: Patada circular al estómago\n· Dollyo chagui: Patada circular a la cara\n· Miro chagui: Patada empujon\n· Neryo chagui: Patada de arriba a abajo\n· Yop chagui: Patada lateral\n· Tuit chagui: Patada coz trasera",
+            "poomsae": "·3º Poomsae \n·4º Poomsae",
+            "application_kicks": " - Miro adelantado + doble bandal chagui atrasado + mondolyo tuit chagui en salto\n - Desplazamiento lateral y contrataque de anneryo chagui(neryo fuera hacia dentro) en respuesta a un ataque directo de miro chagui adelantado\n - Pibote bandal chagui",
+            "application_combination": "·1. Dollyo chagui, yop chagui, dollyo chagui\n·2. Ap chagui, neryo chagui, Ap chagui",
+            "application_kyorugi": "·Saber seguir las órdenes de chariot, kione, chubi sijak\n·Saber las zonas de golpeo\n·Desplazar correctamente\n· Ataques y contrataques"
+        },
+        {
+            "belt": "Azul",
+            "physical": "· Elevación de piernas máxima altura\n· Apertura de piernas en suelo: horizontal\n· Apertura de piernas en spagat(sin mínimo)\n· 15 Flexiones\n· 15 Abdominales superiores\n· 15 Abdominales inferiores\n· Plancha 30 segundos",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante\n·Tuit kubi sogui: Paso largo hacia detrás\n·Moa sogui: Posición de firmes(chariot)\n·Chuchum sogui: Posicion de montar a caballo\n·Naranji sogui: Posición de chumbi\n·Tuit koa sogui: Paso largo con apoyo de pierna trasera en gemelo\n·Orun sogui: Paso a la derecha\n·Uen sogui: Paso a la izquierda",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n. Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba\n· Jansonnal momtong bakat maki: Defensa al medio con un canto de la mano\n· Sonnal momtong maki: Defensa al medio con dos cantos de la mano\n· Momtong bakat maki: Defensa al medio de dentro hacia afuera\n· Chebipum mok chigui: Defensa arriba y ataque al cuello\n· Bituro jansonnal olgul bakat maki: Defensa arriba con un canto de la mano, brazo cambiado\n· Batagson momtong maki: Defensa al medio con la palma de la mano\n· Gechio are maki: Doble defensa abajo",
+            "attacks": "· Momtong bande jirugui: Puñetazo al medio\n· Momtong baro jirigui: Puñetazo al medio. apie cambiado\n· Olgul bande jirugui: Puñetazo a la cara misma pierna mismo brazo\n· Sonnal an chigui: Ataque al cuello con un canto de la mano a pie cambiado\n· Momtong dubong jirugui: Ataque dos puños al medio\n· Dung chumock ape chigui: Ataque a la boca con los nudillos\n· Pionson kut seuo jirugui: Ataque con los dedos a la boca del estómago\n· Me chumock neryo yop chigui: Ataque clavícula de arriba a abajo\n· Palkup dollyo chigui: Ataque con el codo circular\n· Momtong palkup piochock chigui: Ataque con el codo al medio con agarre",
+            "kicks": "· Ap chagui: Patada frontal\n· Bandal chagui: Patada circular al estómago\n· Dollyo chagui: Patada circular a la cara\n· Miro chagui: Patada empujon\n· Neryo chagui: Patada de arriba a abajo\n· Yop chagui: Patada lateral\n· Nacko chagui: Patada de gancho\n· Tuit chagui: Patada coz trasera\n· Mondollyo yop chagui: Patada lateral con giro previo\n· Mondollyo tuit chagui: Patada de coz trasera con giro previo",
+            "poomsae": "·5º Poomsae \n·6º Poomsae \n·Anteriores",
+            "application_kicks": " - Miro adelantado + bituro chagui adelantado(misma pierna) + pibote bandal chagui + doble bandal chagui\n - Contrataque a la bajada libre\n - Mondolyo nako chagui",
+            "application_combination": "·1. Ap chagui, neryo chagui, Ap chagui\n·2. Yop chagui, dollyo chagui, neryo chagui\n·3. AP chagui, yop chagui, mondollyo top chagui",
+            "application_kyorugi": "·Saber seguir las órdenes de chariot, kione, chubi sijak\n·Saber las zonas de golpeo\n·Desplazar correctamente\n· Ataques y contrataques"
+        },
+        {
+            "belt": "Rojo",
+            "physical": "· Elevación de piernas máxima altura\n· Apertura de piernas en suelo: horizontal\n· Apertura de piernas en spagat(sin mínimo)\n· 20 Flexiones\n· 30 Abdominales superiores\n· 30 Abdominales inferiores\n· Fondos de tríceps 20 repeticiones\n· Plancha 30 segundos",
+            "stances": "·Ap sogui: Paso corto\n·Ap kubi sogui: Paso largo hacia delante\n·Tuit kubi sogui: Paso largo hacia detrás\n·Moa sogui: Posición de firmes(chariot)\n·Naranji sogui: Posición de chumbi\n·Tuit koa sogui: Paso largo con apoyo de pierna trasera en gemelo\n·Orun sogui: Paso a la derecha\n·Uen sogui: Paso a la izquierda\n·Bom sogui: posicion corta con rodilla delantera elevada\n·Chuchum sogui: Posicion de montar a caballo",
+            "defenses": "· Are Maki: Defensa abajo\n· Momtong maki: Defensa medio\n· Momtong an maki: Defensa al medio a pie cambiado\n· Olgul Maki: Defensa arriba\n. Olgul bakat Maki: Defensa arriba de dentro hacia afuera (el codo a la altura del hombro en ángulo recto)\n· Jansonnal momtong bakat maki: Defensa al medio con un canto de la mano de dentro hacia fuera\n· Sonnal momtong maki: Defensa al medio con dos cantos de la mano\n· Momtong bakat maki: Defensa al medio de dentro hacia afuera\n· (Pum) Chebipum mok chigui: Defensa arriba y ataque al cuello (movimiento especial)\n. (Pum) Kawi Maki: Doble defensa arriba y abajo (la de abajo tiene que quedar como un are maki-misma pierna mismo brazo)\n· (Pum) Bituro jansonnal olgul bakat maki: Defensa arriba con un canto de la mano, brazo cambiado\n· Batagson momtong maki: Defensa al medio con la palma de la mano\n. Batagson montong an maki: Defensa al medio con la palma de la mano a pie cambiado\n· Gechio are maki: Doble defensa abajo cruzado\n· Goduro batagson momtong an maki: Defensa al medio brazo cambiado con apoyo\n· Gechio momtong maki: Defensa al medio cruzada\n· Okgoro are maki: Defensa abajo cruzando muñecas\n· Jan sonnal momtong yop maki: Defensa media un canto de la mano en chuchum sogui\n· Goduro momtong maki: Defensa media de dentro hacia afuera con los puños\n· Goduro are maki: Defensa abajo de dentro fuera con los puños\n·(Pum) Oe santul maki: defensa combinada arriba y abajo",
+            "attacks": "·Momtong bande jirugui: Puñetazo al medio\n·Momtong baro jirigui: Puñetazo al medio. apie cambiado\n·Olgul bande jirugui: Puñetazo a la cara misma pierna mismo brazo\n·Sonnal an chigui: Ataque al cuello con un canto de la mano a pie cambiado\n·Momtong dubong jirugui: Ataque dos puños al medio\n·Dung chumock ape chigui: Ataque a la boca con los nudillos\n·Pionson kut seuo jirugui: Ataque con los dedos a la boca del estómago\n·Me chumock neryop yop chigui: Ataque clavícula de arriba a abajo\n·Du che cho jirugui: Ataque con los puños a las costillas\n·Dung chumok bakat chigui: Ataque de detro hacia afuera con el puño\n·(Pum) Dankio Tok jirugui: Agarre y ataque\n·Palkup dollyo chigui: Ataque con el codo circular\n·Dankio Ollyo Murup Chigui: Agarre con las manos, atacando con la rodilla de arriba hacia abajo - se realiza el inicio y el ataque desde posición de combate-\n·(Pum) Kibon Chumbi: Posición de inicio de todos los Taeguk\n.(Pum) Montong Palkup Piochok Chigui: Ataque al medio con el codo con una diana\n. (Pum) Bo chumok chumbi: Chumbi -posición de inicio- cogiendo el puño con la mano a la altura de la boca",
+            "kicks": "· Ap chagui: Patada frontal\n· Bandal chagui: Patada circular al estómago\n· Dollyo chagui: Patada circular a la cara\n· Miro chagui: Patada empujon\n· Neryo chagui: Patada de arriba a abajo\n· Yop chagui: Patada lateral\n· Nacko chagui: Patada de gancho\n· Mondollyo tuit chagui: Patada de coz trasera con giro previo\n· Mondollyo yop chagui: Patada lateral con giro previo\n· Mondollyo nacko chagui: Patada de gancho con giro previo\n· Tuit chagui: Patada coz trasera",
+            "poomsae": "·7º Poomsae \n·8º Poomsae \n·Anteriores",
+            "application_kicks": " - Explicar y ejecutar una acción\/acciones en ataque\n - Explicar y ejecutar una acción\/acciones en contraataque",
+            "application_combination": "·1. Ap chagui, neryo chagui, Ap chagui\n·2. Yop chagui, dollyo chagui, neryo chagui\n·3. AP chagui, yop chagui, mondollyo top chagui",
+            "application_kyorugi": "·Saber seguir las órdenes de chariot, kione, chubi sijak\n·Saber las zonas de golpeo\n·Desplazar correctamente\n· Ataques y contrataques"
+        }
+    ]
+}
