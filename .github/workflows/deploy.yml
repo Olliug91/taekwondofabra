@@ -1,0 +1,122 @@
+name: Deploy Laravel to Server
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy to Production (Plesk + SSH)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # 1. Notificar a Plesk para sincronizar panel si existe el webhook configurado
+      - name: Sync Plesk Git Dashboard (Optional)
+        if: env.PLESK_WEBHOOK != ''
+        env:
+          PLESK_WEBHOOK: ${{ secrets.PLESK_DEPLOY_WEBHOOK }}
+        run: |
+          echo "🔄 Sincronizando panel visual de Plesk con el último commit..."
+          curl -k -s -X POST "$PLESK_WEBHOOK" || true
+          echo "✅ Panel de Plesk notificado."
+
+      # 2. Conexión SSH para control total de Composer, Vite y cachés de Laravel
+      - name: Deploy via SSH (Password Authentication)
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          script_stop: true
+          script: |
+            echo "🚀 Iniciando despliegue completo de Taekwondo Fabra en el servidor..."
+            cd ${{ secrets.PROJECT_PATH }}
+
+            # 1. Resolver problema de Plesk si la carpeta no es un repo Git
+            if [ ! -d ".git" ]; then
+                echo "⚠️ Carpeta sin .git (despliegue previo de Plesk). Inicializando repo Git local..."
+                git init
+                git branch -m main 2>/dev/null || true
+            fi
+
+            # 2. Configurar origen autenticado con el token efímero de GitHub Actions
+            git config --global --add safe.directory '*' || true
+            git remote remove origin 2>/dev/null || true
+            git remote add origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+
+            # 3. Detectar binario de PHP 8.3/8.4 (Plesk o sistema)
+            if [ -f /opt/plesk/php/8.3/bin/php ]; then
+                PHP_BIN="/opt/plesk/php/8.3/bin/php"
+            elif [ -f /opt/plesk/php/8.4/bin/php ]; then
+                PHP_BIN="/opt/plesk/php/8.4/bin/php"
+            elif [ -f /usr/bin/php8.3 ]; then
+                PHP_BIN="/usr/bin/php8.3"
+            elif [ -f /usr/bin/php8.2 ]; then
+                PHP_BIN="/usr/bin/php8.2"
+            else
+                PHP_BIN="php"
+            fi
+
+            # 4. Detectar Composer de Plesk o del sistema
+            if [ -f /usr/lib/plesk-9.0/composer.phar ]; then
+                COMPOSER_BIN="$PHP_BIN /usr/lib/plesk-9.0/composer.phar"
+            else
+                COMPOSER_BIN="composer"
+            fi
+
+            echo "Utilizando PHP: $($PHP_BIN -v | head -n 1)"
+
+            # 5. Modo mantenimiento
+            $PHP_BIN artisan down --render="errors::503" --secret="deploy-bypass" || true
+
+            # 6. Forzar sincronización exacta con GitHub
+            echo "Descargando código desde GitHub..."
+            git fetch origin main
+            git reset --hard origin/main
+
+            # Limpiar token del remote por seguridad tras el fetch
+            git remote set-url origin "https://github.com/${{ github.repository }}.git" || true
+
+            # 7. Ejecutar Composer Install con control total
+            echo "📦 Ejecutando composer install..."
+            $COMPOSER_BIN install --no-dev --no-interaction --prefer-dist --optimize-autoloader
+
+            # 8. Compilar frontend (Node 22/20 de Plesk o del sistema)
+            if [ -d /opt/plesk/node/22/bin ]; then
+                export PATH="/opt/plesk/node/22/bin:$PATH"
+            elif [ -d /opt/plesk/node/20/bin ]; then
+                export PATH="/opt/plesk/node/20/bin:$PATH"
+            fi
+
+            echo "Utilizando Node: $(node -v 2>/dev/null || echo 'no encontrado')"
+
+            if command -v npm &> /dev/null; then
+                echo "🎨 Compilando assets frontend con Vite..."
+                npm install
+                npm run build
+            fi
+
+            # 9. Migraciones de base de datos
+            echo "Ejecutando migraciones..."
+            $PHP_BIN artisan migrate --force
+
+            # 10. Limpieza y generación de cachés en producción
+            echo "Regenerando cachés de Laravel..."
+            $PHP_BIN artisan optimize:clear
+            $PHP_BIN artisan config:cache
+            $PHP_BIN artisan route:cache
+            $PHP_BIN artisan view:cache
+
+            # 11. Reiniciar workers/colas si las hubiera
+            $PHP_BIN artisan queue:restart || true
+
+            # 12. Levantar la aplicación
+            $PHP_BIN artisan up
+
+            echo "✅ ¡Despliegue de Taekwondo Fabra completado con éxito!"
