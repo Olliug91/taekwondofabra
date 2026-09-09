@@ -3,21 +3,23 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use Illuminate\Support\Facades\Storage;
 
 class ExamViewer extends Component
 {
     public $ageGroup = '';
+
     public $selectedBelt = '';
 
     public $syllabusData = [];
+
     public $availableBelts = [];
+
     public $currentExam = null;
 
     public function mount()
     {
         $jsonPath = resource_path('data/exam_syllabus.json');
-        
+
         if (file_exists($jsonPath)) {
             $this->syllabusData = json_decode(file_get_contents($jsonPath), true);
         }
@@ -27,7 +29,7 @@ class ExamViewer extends Component
     {
         $this->selectedBelt = '';
         $this->currentExam = null;
-        
+
         if ($value && isset($this->syllabusData[$value])) {
             $this->availableBelts = collect($this->syllabusData[$value])->pluck('belt')->toArray();
         } else {
@@ -47,11 +49,13 @@ class ExamViewer extends Component
 
     public function getPoomsaeVideosProperty()
     {
-        if (!$this->currentExam || !isset($this->currentExam['poomsae'])) return [];
-        
+        if (! $this->currentExam || ! isset($this->currentExam['poomsae'])) {
+            return [];
+        }
+
         $poomsaeText = $this->currentExam['poomsae'];
         $videos = [];
-        
+
         $mapping = [
             '1º Kicho' => ['title' => 'Kicho Il Bo', 'id' => 'nTkV6czDYBU'],
             '2º Kicho' => ['title' => 'Kicho I Bo', 'id' => 'VOxJzFbPKGE'],
@@ -78,28 +82,29 @@ class ExamViewer extends Component
 
     public function parseTechniques($text)
     {
-        if (!$text || $text === '-' || $text === 'No procede') {
+        if (! $text || $text === '-' || $text === 'No procede') {
             return [];
         }
-        
+
         $lines = explode("\n", $text);
         $items = [];
         foreach ($lines as $line) {
             $line = trim($line);
-            if (!empty($line)) {
+            if (! empty($line)) {
                 $line = preg_replace('/^[-·]\s*/u', '', $line);
                 $parts = explode(':', $line, 2);
                 $korean = trim($parts[0] ?? '');
                 $spanish = trim($parts[1] ?? '');
-                
-                if (!empty($korean)) {
+
+                if (! empty($korean)) {
                     $items[] = [
                         'korean' => $korean,
-                        'spanish' => $spanish
+                        'spanish' => $spanish,
                     ];
                 }
             }
         }
+
         return $items;
     }
 

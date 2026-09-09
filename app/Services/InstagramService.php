@@ -2,14 +2,15 @@
 
 namespace App\Services;
 
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
 class InstagramService
 {
-    protected string|null $userAccessToken;
-    protected string|null $pageId;
+    protected ?string $userAccessToken;
+
+    protected ?string $pageId;
 
     public function __construct()
     {
@@ -19,21 +20,22 @@ class InstagramService
 
     public function getLatestPosts(int $limit = 4): array
     {
-        if (!$this->userAccessToken) {
+        if (! $this->userAccessToken) {
             return [];
         }
 
         try {
             // 1) Resolve IG user id + page access token (cache it)
             $resolved = Cache::remember('instagram_resolved_account', 60 * 60 * 12, function () {
-                $resp = Http::get("https://graph.facebook.com/v24.0/me/accounts", [
+                $resp = Http::get('https://graph.facebook.com/v24.0/me/accounts', [
                     'access_token' => $this->userAccessToken,
                     'fields' => 'id,name,instagram_business_account,access_token',
                     'limit' => 100,
                 ]);
 
-                if (!$resp->successful()) {
-                    Log::error('Instagram API (me/accounts) Error: ' . $resp->body());
+                if (! $resp->successful()) {
+                    Log::error('Instagram API (me/accounts) Error: '.$resp->body());
+
                     return null;
                 }
 
@@ -46,26 +48,28 @@ class InstagramService
                     $page = collect($pages)->firstWhere('id', $this->pageId);
                 }
 
-                if (!$page) {
+                if (! $page) {
                     $page = collect($pages)->first(function ($p) {
                         return isset($p['instagram_business_account']['id']);
                     });
                 }
 
-                if (!$page) {
-                    Log::error('Instagram API Error: No page found with instagram_business_account. Raw: ' . json_encode($resp->json()));
+                if (! $page) {
+                    Log::error('Instagram API Error: No page found with instagram_business_account. Raw: '.json_encode($resp->json()));
+
                     return null;
                 }
 
                 $igUserId = $page['instagram_business_account']['id'] ?? null;
                 $pageAccessToken = $page['access_token'] ?? null;
 
-                if (!$igUserId) {
-                    Log::error('Instagram API Error: Page has no instagram_business_account. Page: ' . json_encode($page));
+                if (! $igUserId) {
+                    Log::error('Instagram API Error: Page has no instagram_business_account. Page: '.json_encode($page));
+
                     return null;
                 }
 
-                if (!$pageAccessToken) {
+                if (! $pageAccessToken) {
                     // Fallback (usually works, but page token is preferred)
                     $pageAccessToken = $this->userAccessToken;
                 }
@@ -78,7 +82,7 @@ class InstagramService
                 ];
             });
 
-            if (!$resolved) {
+            if (! $resolved) {
                 return [];
             }
 
@@ -92,8 +96,9 @@ class InstagramService
                     'limit' => $limit,
                 ]);
 
-                if (!$mediaResp->successful()) {
-                    Log::error('Instagram API (IG Media) Error: ' . $mediaResp->body());
+                if (! $mediaResp->successful()) {
+                    Log::error('Instagram API (IG Media) Error: '.$mediaResp->body());
+
                     return [];
                 }
 
@@ -101,7 +106,8 @@ class InstagramService
             });
 
         } catch (\Throwable $e) {
-            Log::error('Instagram API Exception: ' . $e->getMessage());
+            Log::error('Instagram API Exception: '.$e->getMessage());
+
             return [];
         }
     }
