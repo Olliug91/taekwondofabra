@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\PoomsaeController;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/conocenos', [PageController::class, 'conocenos'])->name('conocenos');
@@ -12,11 +12,15 @@ Route::get('/{id}poomsae', [PoomsaeController::class, 'show'])->where('id', '[0-
 
 Route::get('/examenes/descargar-pdf/{ageGroup}/{belt}', function ($ageGroup, $belt) {
     $jsonPath = resource_path('data/exam_syllabus.json');
-    if (!file_exists($jsonPath)) abort(404);
-    
+    if (! file_exists($jsonPath)) {
+        abort(404);
+    }
+
     $syllabusData = json_decode(file_get_contents($jsonPath), true);
-    if (!isset($syllabusData[$ageGroup])) abort(404);
-    
+    if (! isset($syllabusData[$ageGroup])) {
+        abort(404);
+    }
+
     $currentExam = null;
     foreach ($syllabusData[$ageGroup] as $exam) {
         if ($exam['belt'] === $belt) {
@@ -24,8 +28,10 @@ Route::get('/examenes/descargar-pdf/{ageGroup}/{belt}', function ($ageGroup, $be
             break;
         }
     }
-    
-    if (!$currentExam) abort(404);
+
+    if (! $currentExam) {
+        abort(404);
+    }
 
     $pdf = \Barryvdh\DomPDF\Facade\Pdf::loadView('pdf.exam', [
         'currentExam' => $currentExam,
@@ -42,7 +48,6 @@ Route::get('/examenes/descargar-pdf/{ageGroup}/{belt}', function ($ageGroup, $be
 Route::view('/aviso-legal', 'pages.legal.aviso')->name('legal.aviso');
 Route::view('/politica-privacidad', 'pages.legal.privacidad')->name('legal.privacidad');
 Route::view('/politica-cookies', 'pages.legal.cookies')->name('legal.cookies');
-
 
 Route::get('/liga-hockey-manopla', function () {
     return view('pages.hockey-manopla');
