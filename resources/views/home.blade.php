@@ -321,21 +321,21 @@
                                 <!-- 18:30 -->
                                 <tr class="hover:bg-cyan-50/30 transition-colors">
                                     <td class="py-4 px-2 font-bold bg-gray-50 text-cyan-brand">18:30 - 19:25</td>
-                                    <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Cadete B</td>
+                                    <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Precadete</td>
                                     <td class="py-4 px-2 text-gray-300 font-light">-</td>
-                                    <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Cadete B</td>
+                                    <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Precadete</td>
                                     <td class="py-4 px-2 text-gray-300 font-light">-</td>
-                                    <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Cadete B</td>
+                                    <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Precadete</td>
                                 </tr>
 
                                 <!-- 19:30 -->
                                 <tr class="hover:bg-cyan-50/30 transition-colors">
                                     <td class="py-4 px-2 font-bold bg-gray-50 text-cyan-brand">19:30 - 20:25</td>
-                                    <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Cadete A</td>
+                                    <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Cadete/Junior</td>
                                     <td class="py-4 px-2 text-gray-300 font-light">-</td>
-                                    <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Cadete A</td>
+                                    <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Cadete/Junior</td>
                                     <td class="py-4 px-2 text-gray-300 font-light">-</td>
-                                    <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Cadete A</td>
+                                    <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Cadete/Junior</td>
                                 </tr>
 
                                 <!-- 20:30 -->
@@ -377,10 +377,10 @@
                         </div>
                     </div>
 
-                    <!-- Cadete B -->
+                    <!-- Precadete -->
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
                         <div class="bg-cyan-brand px-4 py-3 flex justify-between items-center text-white">
-                            <span class="font-bold text-lg">Cadete B</span>
+                            <span class="font-bold text-lg">Precadete</span>
                             <span class="bg-white/20 px-2 py-0.5 rounded text-sm font-medium">18:30 - 19:25</span>
                         </div>
                         <div class="p-4">
@@ -400,10 +400,10 @@
                         </div>
                     </div>
 
-                    <!-- Cadete A -->
+                    <!-- Cadete/Junior -->
                     <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
                         <div class="bg-cyan-brand px-4 py-3 flex justify-between items-center text-white">
-                            <span class="font-bold text-lg">Cadete A</span>
+                            <span class="font-bold text-lg">Cadete/Junior</span>
                             <span class="bg-white/20 px-2 py-0.5 rounded text-sm font-medium">19:30 - 20:25</span>
                         </div>
                         <div class="p-4">
@@ -468,14 +468,13 @@
                         </div>
                     </div>
 
-                    <!-- Cadete B -->
+                    <!-- Precadete -->
                     <div
                         class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
                         <div class="flex flex-col h-full justify-between">
                             <div class="mb-3">
                                 <h4 class="font-bold text-lg text-gray-900 group-hover:text-cyan-brand transition-colors">
-                                    Cadete
-                                    B</h4>
+                                    Precadete</h4>
                                 <p class="text-sm text-gray-500">8 - 11 años</p>
                             </div>
                             <div class="pt-3 border-t border-gray-100 flex items-end justify-between">
@@ -488,14 +487,13 @@
                         </div>
                     </div>
 
-                    <!-- Cadete A -->
+                    <!-- Cadete/Junior -->
                     <div
                         class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
                         <div class="flex flex-col h-full justify-between">
                             <div class="mb-3">
                                 <h4 class="font-bold text-lg text-gray-900 group-hover:text-cyan-brand transition-colors">
-                                    Cadete
-                                    A</h4>
+                                    Cadete/Junior</h4>
                                 <p class="text-sm text-gray-500">12 - 14 años</p>
                             </div>
                             <div class="pt-3 border-t border-gray-100 flex items-end justify-between">
