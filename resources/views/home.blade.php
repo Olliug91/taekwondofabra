@@ -297,7 +297,7 @@
                         <table class="w-full text-center border-collapse table-fixed min-w-[800px]">
                             <thead>
                                 <tr class="bg-cyan-brand text-white">
-                                    <th class="py-4 px-2 font-bold uppercase text-sm tracking-wider w-32">Horario</th>
+                                    <th class="py-4 px-2 font-bold uppercase text-sm tracking-wider w-40">Horario</th>
                                     <th class="py-4 px-2 font-bold uppercase text-sm tracking-wider bg-black/10">Lunes</th>
                                     <th class="py-4 px-2 font-bold uppercase text-sm tracking-wider">Martes</th>
                                     <th class="py-4 px-2 font-bold uppercase text-sm tracking-wider bg-black/10">Miércoles
@@ -310,7 +310,15 @@
                             <tbody class="divide-y divide-gray-100 text-gray-700 text-sm md:text-base">
                                 <!-- 17:30 -->
                                 <tr class="hover:bg-cyan-50/30 transition-colors">
-                                    <td class="py-4 px-2 font-bold bg-gray-50 text-cyan-brand">17:30 - 18:25</td>
+                                    <td class="py-4 px-2 font-bold bg-gray-50 text-cyan-brand">
+                                        <div>17:30 - 18:25</div>
+                                        <a href="{{ config('taekwondo.whatsapp_groups.infantil.whatsapp_url') }}" target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex items-center gap-1.5 mt-2 px-2.5 py-1 text-xs font-semibold bg-emerald-50 text-emerald-700 hover:bg-[#25D366] hover:text-white rounded-md border border-emerald-200 hover:border-transparent transition-colors shadow-xs"
+                                            title="Unirse al grupo de WhatsApp de Infantil">
+                                            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                            <span>WhatsApp</span>
+                                        </a>
+                                    </td>
                                     <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Infantil</td>
                                     <td class="py-4 px-2 text-gray-300 font-light">-</td>
                                     <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Infantil</td>
@@ -320,7 +328,15 @@
 
                                 <!-- 18:30 -->
                                 <tr class="hover:bg-cyan-50/30 transition-colors">
-                                    <td class="py-4 px-2 font-bold bg-gray-50 text-cyan-brand">18:30 - 19:25</td>
+                                    <td class="py-4 px-2 font-bold bg-gray-50 text-cyan-brand">
+                                        <div>18:30 - 19:25</div>
+                                        <a href="{{ config('taekwondo.whatsapp_groups.precadete.whatsapp_url') }}" target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex items-center gap-1.5 mt-2 px-2.5 py-1 text-xs font-semibold bg-emerald-50 text-emerald-700 hover:bg-[#25D366] hover:text-white rounded-md border border-emerald-200 hover:border-transparent transition-colors shadow-xs"
+                                            title="Unirse al grupo de WhatsApp de Precadete">
+                                            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                            <span>WhatsApp</span>
+                                        </a>
+                                    </td>
                                     <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Precadete</td>
                                     <td class="py-4 px-2 text-gray-300 font-light">-</td>
                                     <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Precadete</td>
@@ -330,7 +346,15 @@
 
                                 <!-- 19:30 -->
                                 <tr class="hover:bg-cyan-50/30 transition-colors">
-                                    <td class="py-4 px-2 font-bold bg-gray-50 text-cyan-brand">19:30 - 20:25</td>
+                                    <td class="py-4 px-2 font-bold bg-gray-50 text-cyan-brand">
+                                        <div>19:30 - 20:25</div>
+                                        <a href="{{ config('taekwondo.whatsapp_groups.cadete_junior.whatsapp_url') }}" target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex items-center gap-1.5 mt-2 px-2.5 py-1 text-xs font-semibold bg-emerald-50 text-emerald-700 hover:bg-[#25D366] hover:text-white rounded-md border border-emerald-200 hover:border-transparent transition-colors shadow-xs"
+                                            title="Unirse al grupo de WhatsApp de Cadete/Junior">
+                                            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                            <span>WhatsApp</span>
+                                        </a>
+                                    </td>
                                     <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Cadete/Junior</td>
                                     <td class="py-4 px-2 text-gray-300 font-light">-</td>
                                     <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Cadete/Junior</td>
@@ -340,7 +364,15 @@
 
                                 <!-- 20:30 -->
                                 <tr class="hover:bg-cyan-50/30 transition-colors">
-                                    <td class="py-4 px-2 font-bold bg-gray-50 text-cyan-brand">20:30 - 21:30</td>
+                                    <td class="py-4 px-2 font-bold bg-gray-50 text-cyan-brand">
+                                        <div>20:30 - 21:30</div>
+                                        <a href="{{ config('taekwondo.whatsapp_groups.junior_senior.whatsapp_url') }}" target="_blank" rel="noopener noreferrer"
+                                            class="inline-flex items-center gap-1.5 mt-2 px-2.5 py-1 text-xs font-semibold bg-emerald-50 text-emerald-700 hover:bg-[#25D366] hover:text-white rounded-md border border-emerald-200 hover:border-transparent transition-colors shadow-xs"
+                                            title="Unirse al grupo de WhatsApp de Junior / Senior">
+                                            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                            <span>WhatsApp</span>
+                                        </a>
+                                    </td>
                                     <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Junior / Senior</td>
                                     <td class="py-4 px-2 text-gray-300 font-light">-</td>
                                     <td class="py-4 px-2 font-bold text-gray-800 bg-cyan-50/20">Junior / Senior</td>
@@ -370,10 +402,15 @@
                                     class="px-3 py-1 bg-cyan-50 text-cyan-800 rounded-full text-xs font-bold border border-cyan-100">Viernes</span>
                             </div>
                             <div
-                                class="flex justify-between items-center text-sm text-gray-500 border-t border-gray-50 pt-3">
+                                class="flex justify-between items-center text-sm text-gray-500 border-t border-gray-50 pt-3 mb-4">
                                 <span>3 - 7 años</span>
                                 <span class="text-cyan-brand font-bold">40€ / mes</span>
                             </div>
+                            <a href="{{ config('taekwondo.whatsapp_groups.infantil.whatsapp_url') }}" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-sm rounded-lg shadow-sm transition-all transform active:scale-95">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                <span>Unirse al grupo de WhatsApp</span>
+                            </a>
                         </div>
                     </div>
 
@@ -393,10 +430,15 @@
                                     class="px-3 py-1 bg-cyan-50 text-cyan-800 rounded-full text-xs font-bold border border-cyan-100">Viernes</span>
                             </div>
                             <div
-                                class="flex justify-between items-center text-sm text-gray-500 border-t border-gray-50 pt-3">
+                                class="flex justify-between items-center text-sm text-gray-500 border-t border-gray-50 pt-3 mb-4">
                                 <span>8 - 11 años</span>
                                 <span class="text-cyan-brand font-bold">40€ / mes</span>
                             </div>
+                            <a href="{{ config('taekwondo.whatsapp_groups.precadete.whatsapp_url') }}" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-sm rounded-lg shadow-sm transition-all transform active:scale-95">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                <span>Unirse al grupo de WhatsApp</span>
+                            </a>
                         </div>
                     </div>
 
@@ -416,10 +458,15 @@
                                     class="px-3 py-1 bg-cyan-50 text-cyan-800 rounded-full text-xs font-bold border border-cyan-100">Viernes</span>
                             </div>
                             <div
-                                class="flex justify-between items-center text-sm text-gray-500 border-t border-gray-50 pt-3">
+                                class="flex justify-between items-center text-sm text-gray-500 border-t border-gray-50 pt-3 mb-4">
                                 <span>12 - 14 años</span>
                                 <span class="text-cyan-brand font-bold">40€ / mes</span>
                             </div>
+                            <a href="{{ config('taekwondo.whatsapp_groups.cadete_junior.whatsapp_url') }}" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-sm rounded-lg shadow-sm transition-all transform active:scale-95">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                <span>Unirse al grupo de WhatsApp</span>
+                            </a>
                         </div>
                     </div>
 
@@ -439,10 +486,15 @@
                                     class="px-3 py-1 bg-cyan-50 text-cyan-800 rounded-full text-xs font-bold border border-cyan-100">Viernes</span>
                             </div>
                             <div
-                                class="flex justify-between items-center text-sm text-gray-500 border-t border-gray-50 pt-3">
+                                class="flex justify-between items-center text-sm text-gray-500 border-t border-gray-50 pt-3 mb-4">
                                 <span>+14 años</span>
                                 <span class="text-cyan-brand font-bold">45€ / mes</span>
                             </div>
+                            <a href="{{ config('taekwondo.whatsapp_groups.junior_senior.whatsapp_url') }}" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-sm rounded-lg shadow-sm transition-all transform active:scale-95">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                <span>Unirse al grupo de WhatsApp</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -451,8 +503,8 @@
                 <div class="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <!-- Infantil -->
                     <div
-                        class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
-                        <div class="flex flex-col h-full justify-between">
+                        class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+                        <div>
                             <div class="mb-3">
                                 <h4 class="font-bold text-lg text-gray-900 group-hover:text-cyan-brand transition-colors">
                                     Infantil</h4>
@@ -466,12 +518,19 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="pt-4 mt-3 border-t border-gray-50">
+                            <a href="{{ config('taekwondo.whatsapp_groups.infantil.whatsapp_url') }}" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 bg-emerald-50 hover:bg-[#25D366] text-emerald-700 hover:text-white font-medium text-xs rounded-lg transition-all border border-emerald-200 hover:border-transparent group/btn shadow-2xs">
+                                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                <span>Grupo de WhatsApp</span>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Precadete -->
                     <div
-                        class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
-                        <div class="flex flex-col h-full justify-between">
+                        class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+                        <div>
                             <div class="mb-3">
                                 <h4 class="font-bold text-lg text-gray-900 group-hover:text-cyan-brand transition-colors">
                                     Precadete</h4>
@@ -485,12 +544,19 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="pt-4 mt-3 border-t border-gray-50">
+                            <a href="{{ config('taekwondo.whatsapp_groups.precadete.whatsapp_url') }}" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 bg-emerald-50 hover:bg-[#25D366] text-emerald-700 hover:text-white font-medium text-xs rounded-lg transition-all border border-emerald-200 hover:border-transparent group/btn shadow-2xs">
+                                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                <span>Grupo de WhatsApp</span>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Cadete/Junior -->
                     <div
-                        class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
-                        <div class="flex flex-col h-full justify-between">
+                        class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+                        <div>
                             <div class="mb-3">
                                 <h4 class="font-bold text-lg text-gray-900 group-hover:text-cyan-brand transition-colors">
                                     Cadete/Junior</h4>
@@ -504,12 +570,19 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="pt-4 mt-3 border-t border-gray-50">
+                            <a href="{{ config('taekwondo.whatsapp_groups.cadete_junior.whatsapp_url') }}" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 bg-emerald-50 hover:bg-[#25D366] text-emerald-700 hover:text-white font-medium text-xs rounded-lg transition-all border border-emerald-200 hover:border-transparent group/btn shadow-2xs">
+                                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                <span>Grupo de WhatsApp</span>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Junior/Senior -->
                     <div
-                        class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group">
-                        <div class="flex flex-col h-full justify-between">
+                        class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow group flex flex-col justify-between">
+                        <div>
                             <div class="mb-3">
                                 <h4 class="font-bold text-lg text-gray-900 group-hover:text-cyan-brand transition-colors">
                                     Junior
@@ -523,6 +596,13 @@
                                         class="text-gray-400 text-sm">/mes</span>
                                 </div>
                             </div>
+                        </div>
+                        <div class="pt-4 mt-3 border-t border-gray-50">
+                            <a href="{{ config('taekwondo.whatsapp_groups.junior_senior.whatsapp_url') }}" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 bg-emerald-50 hover:bg-[#25D366] text-emerald-700 hover:text-white font-medium text-xs rounded-lg transition-all border border-emerald-200 hover:border-transparent group/btn shadow-2xs">
+                                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                                <span>Grupo de WhatsApp</span>
+                            </a>
                         </div>
                     </div>
                 </div>
