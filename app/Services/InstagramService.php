@@ -14,8 +14,8 @@ class InstagramService
 
     public function __construct()
     {
-        $this->userAccessToken = env('INSTAGRAM_ACCESS_TOKEN'); // User token (Facebook Login)
-        $this->pageId = env('INSTAGRAM_PAGE_ID'); // Optional but recommended
+        $this->userAccessToken = config('services.instagram.access_token'); // User token (Facebook Login)
+        $this->pageId = config('services.instagram.page_id'); // Optional but recommended
     }
 
     public function getLatestPosts(int $limit = 4): array
