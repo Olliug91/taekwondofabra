@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'instagram' => [
+        'access_token' => env('INSTAGRAM_ACCESS_TOKEN'),
+        'page_id' => env('INSTAGRAM_PAGE_ID'),
+    ],
+
 ];
