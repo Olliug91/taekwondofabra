@@ -106,6 +106,24 @@
     <div class="container mx-auto px-4 py-16">
         <h1 class="text-center text-4xl font-heading mb-12 text-gray-900">Preguntas Frecuentes</h1>
 
+        <!-- Guía de Bienvenida y Normativa -->
+        <div class="max-w-4xl mx-auto mb-8 bg-gradient-to-r from-cyan-50 to-white rounded-2xl p-6 md:p-8 shadow-sm border border-cyan-100 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <span class="inline-block text-xs font-bold uppercase tracking-wider text-cyan-brand mb-1">Documento oficial del club</span>
+                <h2 class="font-heading text-xl md:text-2xl text-gray-900">Guía de Bienvenida y Normativa</h2>
+                <p class="text-gray-600 text-sm mt-1">
+                    ¿Acabas de llegar al club? Descarga o consulta nuestra guía en PDF con horarios, cuotas, normas del dojang, licencia y app del club.
+                </p>
+            </div>
+            <a href="{{ route('guide.welcome') }}" target="_blank" rel="noopener noreferrer"
+                class="shrink-0 inline-flex items-center justify-center gap-2 bg-cyan-brand hover:bg-cyan-600 text-white font-semibold text-sm px-5 py-3 rounded-xl shadow-sm hover:shadow-md transition-all w-full md:w-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span>Abrir Guía (PDF)</span>
+            </a>
+        </div>
+
         <!-- Índice -->
         <div class="max-w-4xl mx-auto mb-12 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
             <h2 class="font-heading text-xl mb-4 text-gray-800">En este apartado resolvemos tus dudas más frecuentes:</h2>
