@@ -44,6 +44,8 @@ Route::get('/examenes/descargar-pdf/{ageGroup}/{belt}', function ($ageGroup, $be
     return $pdf->stream('Temario_Taekwondo_'.$belt.'.pdf');
 })->name('examenes.pdf');
 
+Route::get('/guia-bienvenida', [PageController::class, 'welcomeGuide'])->name('guide.welcome');
+
 // Static legal pages can also be handled by PageController or closures for simplicity
 Route::view('/aviso-legal', 'pages.legal.aviso')->name('legal.aviso');
 Route::view('/politica-privacidad', 'pages.legal.privacidad')->name('legal.privacidad');

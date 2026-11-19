@@ -228,6 +228,8 @@
                         class="opacity-80 hover:opacity-100 hover:pl-2 transition-all">Conócenos</a>
                     <a href="{{ route('faq') }}"
                         class="opacity-80 hover:opacity-100 hover:pl-2 transition-all">Preguntas Frecuentes</a>
+                    <a href="{{ route('guide.welcome') }}" target="_blank" rel="noopener noreferrer"
+                        class="opacity-80 hover:opacity-100 hover:pl-2 transition-all">Guía de Bienvenida y Normativa (PDF)</a>
                     <div class="border-t border-white/20 my-1"></div>
                     <a href="https://tkdcv.es" target="_blank"
                         class="opacity-80 hover:opacity-100 hover:pl-2 transition-all text-sm leading-tight">
